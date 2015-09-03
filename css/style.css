@@ -1,0 +1,78 @@
+body {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(222,217,242,1) 0%, rgba(224,219,243,1) 7%, rgba(233,228,246,1) 43%, rgba(210,209,240,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(222,217,242,1)), color-stop(7%, rgba(224,219,243,1)), color-stop(43%, rgba(233,228,246,1)), color-stop(100%, rgba(210,209,240,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(222,217,242,1) 0%, rgba(224,219,243,1) 7%, rgba(233,228,246,1) 43%, rgba(210,209,240,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(222,217,242,1) 0%, rgba(224,219,243,1) 7%, rgba(233,228,246,1) 43%, rgba(210,209,240,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(222,217,242,1) 0%, rgba(224,219,243,1) 7%, rgba(233,228,246,1) 43%, rgba(210,209,240,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(222,217,242,1) 0%, rgba(224,219,243,1) 7%, rgba(233,228,246,1) 43%, rgba(210,209,240,1) 100%);
+}
+
+.panel_sup {
+	background-color: #3E4156;
+	padding: 15px;
+}
+
+.title {
+	color: white;
+}
+
+.header-title {
+	padding-top: 60px;
+	text-align: center;
+}
+
+.panel_sup_der {
+	float: right;
+	padding-top: 17px;
+}
+
+.menu li {display: inline-block;}
+
+.menu li a {
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	background-color: #3E4156;
+
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover, .menu li:hover > a{
+	color: white;
+	background:#a0a0a0;
+}
+
+.menu ol, ul {
+    margin: 0px;
+    margin: 0px;
+}
+
+.page {
+	padding-top: 30px;
+}
+
+.title-desc {
+	padding-bottom: 20px;
+}
+
+.description {
+	font-size: 17px;
+	padding-top: 20px;
+}
+
+.logo {
+	height: 80px;
+	width: 120px;
+}
+
+.image {
+	height: 200px;
+	width: 200px;
+}
