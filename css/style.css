@@ -81,3 +81,14 @@ body {
 	height: 200px;
 	width: 200px;
 }
+
+.transparent-input {
+   background-color: rgba(0,0,0,0) !important;
+   color: white;
+   margin-bottom: 5px;
+}
+
+.transparent-btn {
+	background-color: rgba(0,0,0,0) !important;
+	color: white;
+}
