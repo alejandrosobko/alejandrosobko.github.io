@@ -8,28 +8,25 @@ body {
 	/*background-color: white;#3E4156;*/
 	padding: 15px;
 	/*color: black;*/
+    background: rgba(25, 25, 25, .5);
 }
 
 .logo {
-	opacity: 0.5;
 	height: 60px;
 	width: 100px;
 }
 
 .title_name {
-	opacity: 0.5;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 30px;
 }
 
 .title_surname {
-	opacity: 0.5;
 	font-weight: bold;
 	font-size: 30px;
 }
 
 .subtitle {
-	opacity: 0.5;
 	font-size: 12px;
 	text-align: right;
 }
@@ -57,7 +54,7 @@ body {
 }
 
 .menu li a:hover, .menu li:hover > a{
-	color: #00C0FA;
+	background-color: black;
 }
 
 .menu ol, ul {
