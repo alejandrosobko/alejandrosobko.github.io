@@ -78,6 +78,10 @@ body {
 	width: 200px;
 }
 
+.icons {
+	text-align: right;
+}
+
 .icon {
 	padding-bottom: 5px;
 }
