@@ -49,7 +49,7 @@ body {
 
 .menu li a:hover, .menu li:hover > a{
 	background-color: rgba(0,0,0,0.5);
-	border-bottom: 2px solid transparent;
+	border-bottom: 1px solid #FFF;
 }
 
 .menu ol, ul {
