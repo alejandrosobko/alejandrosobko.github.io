@@ -50,19 +50,19 @@
 						<a target="_blank" title="Seguime en LinkedIn" href="https://ar.linkedin.com/in/alejandrosobko"><img src="images/linkedin.png" class="icon"></a>
 					</div>
 					<div class="col-xs-10">
-						<form class="form-horizontal col-xs-offset-2">
-							<h4>Si querés, podés dejarme un comentario</h4>
+						<form class="form-horizontal col-xs-offset-2" method="post" enctype="text/plain">
+							<h4>Si querés, podés enviarme un comentario</h4>
 							<div class="form-group">
 							    <label class="col-md-2 control-label">Nombre</label>
 							    <div class="col-md-10">
-							    	<input type="text" class="form-control transparent-input" id="input" placeholder="Nombre">
+							    	<input type="text" class="form-control transparent-input" id="input" placeholder="Nombre" required>
 							    </div>
 							    <label class="col-md-2 control-label">Email</label>
 							    <div class="col-md-10">
-							    	<input type="email" class="form-control transparent-input" id="inputEmail3" placeholder="Email">
+							    	<input type="email" class="form-control transparent-input" id="inputEmail3" placeholder="Email" required>
 							    </div>
 							    <div class="col-md-10 col-md-offset-2">
-							    	<textarea class="form-control transparent-input" rows="3" placeholder="Comentario"></textarea>
+							    	<textarea class="form-control transparent-input" rows="3" placeholder="Comentario" required></textarea>
 							    </div>
 						    	<div class="col-md-10 col-md-offset-2">
 						      		<button type="submit" class="btn btn-default transparent-btn">Enviar</button>
