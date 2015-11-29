@@ -66,6 +66,9 @@
         <div class="row">
           <div class="col-xs-12 col-md-10 col-md-offset-1 description">
             <span>
+              <div id="back-top">
+                <a href="#top"><img src="images/top.png"></a>
+              </div>
               <img class="image2 img-responsive" src="images/profile2.jpg"/>
               Coder - Geek - Linuxero<br>
               Me llamo Alejandro Sobko, soy estudiante de Licenciatura Informática con orientación en Desarrollo de Software, en la <a target="_blank" href="http://www.unq.edu.ar">Universidad Nacional de Quilmes</a>.<br>
@@ -130,12 +133,31 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-    $('#nav a').click(function() {
+    $('#nav a, #btt a').click(function() {
       var elementClicked = $(this).attr("href");
-      if(elementClicked == '#top') var destination = 0;
-      else var destination = $(elementClicked).offset().top;
+      var destination = $(elementClicked).offset().top;
       $("html,body").stop().animate({scrollTop: destination}, 800);
       return false;
+    });
+
+    var height = $( document ).height();
+    var scroll = (height/100)*20;
+    $("#back-top").hide();
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > scroll) {
+          $('#back-top').fadeIn();
+        } else {
+          $('#back-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-top a').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 700);
+        return false;
+      });
     });
   });
   </script>
