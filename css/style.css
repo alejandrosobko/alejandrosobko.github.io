@@ -1,84 +1,96 @@
 body {
-	background: url('../images/background.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: white;
+  background: url('../images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 .panel_sup {
-	padding: 15px;
-    background: rgba(25, 25, 25, .5);
+  padding: 15px;
+  background: rgba(25, 25, 25, .5);
 }
 
 .logo {
-	height: 60px;
-	width: 100px;
+  height: 60px;
+  width: 100px;
 }
 
 .title_name {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
 }
 
 .title_surname {
-	margin-left: -10px;
-	font-weight: bold;
-	font-size: 30px;
+  margin-left: -10px;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .subtitle {
-	font-size: 12px;
-	text-align: right;
+  font-size: 12px;
+  text-align: right;
 }
 
 .panel_sup_der {
-	float: right;
-	padding-top: 10px;
+  float: right;
+  padding-top: 10px;
 }
 
 .menu li {display: inline-block;}
 
 .menu li a {
-	color: white;
-	font-size: 15px;
-	text-decoration: none;
-	padding: 15px;
-	display: block;
- 	border-radius: 10px;
-	transition: 1.0s ease-in-out;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  border-radius: 10px;
+  transition: 1.0s ease-in-out;
 }
 
 .menu li a:hover, .menu li:hover > a{
-	background-color: rgba(0,0,0,0.5);
-	border-bottom: 1px solid #FFF;
+  background-color: rgba(0,0,0,0.5);
+  border-bottom: 1px solid #FFF;
 }
 
 .menu ol, ul {
-    margin: 0px;
-    margin: 0px;
+  margin: 0px;
+  margin: 0px;
 }
 
 .page {
-	padding-top: 30px;
-	font-family: Verdana, Arial;
+  padding-top: 30px;
+  font-family: Verdana, Arial;
+}
+
+div#index {
+  height: 100vh;
+}
+
+div#about {
+  height: 100vh;
+}
+
+div#contact {
+  height: 100vh;
 }
 
 .title-desc {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .description {
-	font-size: 17px;
-	padding-top: 20px;
+  font-size: 17px;
+  padding-top: 20px;
 }
 
 .image {
-	float: left;
-	height: 200px;
-	width: 200px;
-	margin-right: 15px;
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-right: 15px;
 }
 
 .image2 {
@@ -90,22 +102,26 @@ body {
 }
 
 .icons {
-	text-align: right;
+  text-align: right;
 }
 
 .icon {
-	height: 45px;
-	width: 45px;
-	padding-bottom: 5px;
+  height: 45px;
+  width: 45px;
+  padding-bottom: 5px;
 }
 
 .transparent-input {
-   background-color: rgba(0,0,0,0.1);
-   color: white;
-   margin-bottom: 5px;
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+  margin-bottom: 5px;
 }
 
 .transparent-btn {
-	background-color: rgba(0,0,0,0);
-	color: white;
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+
+footer {
+  padding-bottom: 20px;
 }

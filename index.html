@@ -1,63 +1,144 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" >
-	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" >
+  
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-	<title>Alejandro Sobko</title>
+  <title>Alejandro Sobko</title>
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 panel_sup">
-				<div class="col-xs-12 col-md-6">
-					<a href="index.html"><img class="col-sm-12 col-md-1 logo" src="images/terminal.png"></a>
-					<div>
-						<span class="title_name">ALEJANDRO</span><span class="title_surname"> SOBKO</span>
-					</div>
-					<div>
-						<span class="subtitle"> PROGRAMADOR INFORMÁTICO</span>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-6">
-					<nav class="panel_sup_der">
-						<ul class="menu">
-							<li> <a href="index.html"><span class="glyphicon glyphicon-home"></span> Principal</a></li>
-							<li> <a href="about.html"><span class="glyphicon glyphicon-user"></span> Sobre mi</a></li>
-							<li> <a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2 page">
-				<div class="row">
-					<h2 class="title-desc">¡BIENVENIDO!</h2>
-					<hr>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-8 col-md-offset-2 description">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 panel_sup">
+        <div class="col-xs-12 col-md-6">
+          <a href="index.html"><img class="col-sm-12 col-md-1 logo" src="images/terminal.png"></a>
+          <div>
+            <span class="title_name">ALEJANDRO</span><span class="title_surname"> SOBKO</span>
+          </div>
+          <div>
+            <span class="subtitle"> PROGRAMADOR INFORMÁTICO</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <nav class="panel_sup_der">
+            <ul id="nav" class="menu">
+              <li> <a href="#index"><span class="glyphicon glyphicon-home"></span> Principal</a></li>
+              <li> <a href="#about"><span class="glyphicon glyphicon-user"></span> Sobre mi</a></li>
+              <li> <a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="index" class="row">
+      <div class="col-xs-8 col-xs-offset-2 page">
+        <div class="row">
+          <h2 class="title-desc">¡BIENVENIDO!</h2>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-md-offset-2 description">
             <img class="image img-responsive" src="images/profile.png"/>
             <br><br>
-						<span>
-							¡Gracias por visitar mi sitio! <br>
-							El mismo tiene información personal, de estudios, contactos y demás. Te invito a que recorras las distintas secciones.
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <span>
+              ¡Gracias por visitar mi sitio! <br>
+              El mismo tiene información personal, de estudios, contactos y demás. Te invito a que recorras las distintas secciones.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div id="about" class="row">
+      <div class="col-xs-8 col-xs-offset-2 page">
+        <div class="row">
+          <h2 class="title-desc">SOBRE MI</h2>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-10 col-md-offset-1 description">
+            <span>
+              <img class="image2 img-responsive" src="images/profile2.jpg"/>
+              Coder - Geek - Linuxero<br>
+              Me llamo Alejandro Sobko, soy estudiante de Licenciatura Informática con orientación en Desarrollo de Software, en la <a target="_blank" href="http://www.unq.edu.ar">Universidad Nacional de Quilmes</a>.<br>
+              Me gusta enseñar y compartir conocimiento, y tuve la oportunidad de ser ayudante en la materia Programación con Objetos 1 en la universidad
+              donde estudio.<br>
+              <br>
+              Me interesa el desarrollo orientado a objetos y las nuevas tecnologías. Tengo experiencia programando en Python, Java, Ruby, SmallTalk, Android, y HTML + CSS.<br>
+              Preferencia: Python o Ruby sobre Sublime.<br>
+              <br>
+              Además de programar, me encanta la seguridad informática. Es un mundo enorme que me encataría aprenderlo por completo. Me gusta el análisis y explotación de vulnerabilidades, y aprender distintos métodos de ataques.<br>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="row">
+      <div class="col-xs-8 col-xs-offset-2 page">
+        <div class="row">
+          <h2 class="title-desc">CONTACTO</h2>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-md-12 icons">
+            <a target="_blank" title="Seguime en Facebook" href="https://www.facebook.com/alejandro.sobko"><img src="images/facebook.png" class="icon"></a>
+            <a target="_blank" title="Seguime en Twitter" href="https://www.twitter.com/alejandrosobko"><img src="images/twitter.png" class="icon"></a>
+            <a target="_blank" title="Mira mis proyectos" href="https://www.github.com/alejandrosobko"><img src="images/github_icon.png" class="icon"></a>
+            <a target="_blank" title="Seguime en LinkedIn" href="https://ar.linkedin.com/in/alejandrosobko"><img src="images/linkedin.png" class="icon"></a>
+          </div>
+          <div class="col-xs-10">
+            <form class="form-horizontal col-xs-offset-2" >
+              <h4>Si querés, podés enviarme un comentario</h4>
+              <div class="form-group">
+                  <label class="col-md-2 control-label">Nombre</label>
+                  <div class="col-md-10">
+                    <input type="text" class="form-control transparent-input" id="input" placeholder="Nombre" required>
+                  </div>
+                  <label class="col-md-2 control-label">Email</label>
+                  <div class="col-md-10">
+                    <input type="email" class="form-control transparent-input" id="inputEmail3" placeholder="Email" required>
+                  </div>
+                  <div class="col-md-10 col-md-offset-2">
+                    <textarea class="form-control transparent-input" rows="3" placeholder="Comentario" required></textarea>
+                  </div>
+                  <div class="col-md-10 col-md-offset-2">
+                      <button type="submit" class="btn btn-default transparent-btn">Enviar</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer>
+        <hr>
+        <center>Alejandro Sobko | 2015</center>
+      </footer>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#nav a').click(function() {
+      var elementClicked = $(this).attr("href");
+      if(elementClicked == '#top') var destination = 0;
+      else var destination = $(elementClicked).offset().top;
+      $("html,body").stop().animate({scrollTop: destination}, 800);
+      return false;
+    });
+  });
+  </script>
 
 </body>
 </html>
