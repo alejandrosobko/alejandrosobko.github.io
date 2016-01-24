@@ -9,7 +9,7 @@ body {
 
 .panel_sup {
   padding: 15px;
-  background: rgba(25, 25, 25, 0.5);
+  background: rgba(25, 25, 25, 0.8);
   position: fixed;
   z-index: 1;
 }
@@ -19,15 +19,27 @@ body {
   width: 100px;
 }
 
-.title_name {
+.first_name {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
 }
 
-.title_surname {
-  margin-left: -10px;
-  font-weight: bold;
+.last_name {
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
+  font-weight: bold;
+}
+
+.title_name {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+}
+
+.title_lastname {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .subtitle {
@@ -60,6 +72,31 @@ body {
 .menu ol, ul {
   margin: 0px;
   margin: 0px;
+}
+
+.button {
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #FFF;
+  color: white;
+  font-size: 25px;
+  padding: 0.2em 2em;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  margin-top: 75px;
+  transition: background-color .3s;
+}
+
+.button:hover, .button:focus {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.init {
+  text-align: center;
+  padding-top: 60px;
+  font-family: Verdana, Arial;
 }
 
 .page {
