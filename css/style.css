@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
-  .logo {
-    display: none !important;
+  .titles {
+//    display: none !important;
   }
 }
 
@@ -18,13 +18,17 @@ body {
   background: rgba(25, 25, 25, 0.8);
 }
 
+.navbar-toggle {
+  float: left;
+}
+
 .navbar-right {
   padding-top: 15px;
 }
 
 .logo {
   height: 60px;
-  width: 100px;
+  width: 70px;
 }
 
 .titles {
