@@ -114,7 +114,11 @@ body {
   font-family: Verdana, Arial;
 }
 
-div#index { height: 100vh; }
+div#index { 
+  height: 100vh;
+  padding-top: 60px;
+}
+
 div#about { height: 100vh; }
 div#contact { height: 100vh; }
 
