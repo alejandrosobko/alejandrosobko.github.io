@@ -1,3 +1,7 @@
+@media only screen and (max-width: 480px) {
+  .title_lastname {display: block;}
+}
+
 body {
   padding-top: 70px;
   background: url('../images/background.jpg') no-repeat center center fixed; 
