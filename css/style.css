@@ -120,7 +120,6 @@ div#index {
 }
 
 div#about { height: 100vh; }
-div#contact { height: 100vh; }
 
 .title-desc { padding-bottom: 20px; }
   
@@ -164,17 +163,6 @@ div#contact { height: 100vh; }
   height: 45px;
   width: 45px;
   padding-bottom: 5px;
-}
-
-.transparent-input {
-  background-color: rgba(0,0,0,0.1);
-  color: white;
-  margin-bottom: 5px;
-}
-
-.transparent-btn {
-  background-color: rgba(0,0,0,0);
-  color: white;
 }
 
 footer { padding-bottom: 20px; }
