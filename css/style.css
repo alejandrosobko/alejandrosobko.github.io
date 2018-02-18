@@ -11,11 +11,6 @@ a {
   text-decoration: none;
 }
 
-.center {
-  margin: 0 auto;
-  width: 50%;
-}
-
 .hidden-content {
   display: none;
 }
@@ -32,10 +27,14 @@ a {
   height: 100vh;
 }
 
+.header .console-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .header .anim-typewriter {
-  margin-top: 10%;
   font-size: 35px;
-  display: inline-block;
   border-right: 2px solid rgba(255,255,255,.75);
   white-space: nowrap;
   overflow: hidden;
@@ -148,7 +147,7 @@ nav img {
 }
 
 .full-page {
-  height: 100vh;
+  min-height: 100vh;
   background: white;
   padding-top: 70px;
 }
@@ -168,7 +167,8 @@ nav img {
 }
 
 .padding-left-20 {
-  margin-left: 20%;
+  margin-left: 15%;
+  margin-right: 8%;
 }
 
 img.profile {
@@ -192,4 +192,29 @@ div #profile-about{
 #reference div span {
   display: inline-block;
   width: 100px;
+}
+
+#habilities {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#habilities div {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 150px;
+}
+
+#habilities img {
+  width: 60px;
+  height: 60px;
+}
+
+#habilities span {
+  margin-top: 20px;
+  max-width: 50%;
 }
