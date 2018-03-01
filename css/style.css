@@ -206,7 +206,7 @@ div #profile-about{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 150px;
+  flex-basis: 130px;
 }
 
 #habilities img {
@@ -215,6 +215,5 @@ div #profile-about{
 }
 
 #habilities span {
-  margin-top: 20px;
-  max-width: 50%;
+  margin-top: 10px;
 }
