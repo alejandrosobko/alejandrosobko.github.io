@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
   <link href="css/style.css" rel="stylesheet" >
 
   <title>Alejandro Sobko</title>
@@ -15,7 +16,7 @@
   <div class="header" id="welcome">
     <div class="console-text">
       <h1>
-        <span class="typer" id="main" data-words="Hi! I'm Alejandro Sobko, full stack developer / This site contains information about me, my hobbies, projects and skills. Thanks for visiting!" data-delim="/" data-colors="white" data-delay="100" data-deleteDelay="3000" data-loop="2" data-delete-last="false"></span>
+        <span class="typer" id="main" data-words="Hi! I'm Alejandro Sobko, full stack developer" data-delim="/" data-colors="white" data-delay="100" data-deleteDelay="3000" data-loop="1" data-delete-last="false"></span>
         <span class="cursor" data-owner="main"></span>
       </h1>
     </div>
@@ -25,15 +26,19 @@
   </div>
 
   <!-- menu for large screens -->
-  <nav class="hidden-content">
-    <ul>
-      <li class="logo"><a href="#welcome"><img src="images/terminal.png" alt="logo"></a></li>
-      <li class="section"><a href="#about">About</a></li>
-      <li class="section"><a href="#skills">Skills</a></li>
-      <li class="section"><a href="#experience">Experience</a></li>
-      <li class="section"><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="hidden-content navbar-wraper">
+    <nav>
+      <div class="logo col-sm-1"><a href="#welcome"><img src="images/terminal.png" alt="logo"></a></div>
+      <div class="col-sm-11">
+        <ul>
+          <li class="section"><a href="#about">About</a></li>
+          <li class="section"><a href="#skills">Skills</a></li>
+          <li class="section"><a href="#experience">Experience</a></li>
+          <li class="section"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <!-- end -->
 
   <!-- menu for small screens -->
@@ -51,12 +56,12 @@
   </label>
   <!-- end -->
 
-  <div id="content">
+  <div id="content" class="container">
     <div id="about" class="full-page">
       <h1 id="section-title">About</h1>
-      <div class="padding-left-20">
-        <img class="profile" src="images/profile2.png" alt="Profile image">
-        <div id="profile-about">
+      <div>
+        <img class="profile col-md-3 col-xs-11" src="images/profile2.png" alt="Profile image">
+        <div id="profile-about" class="col-md-9">
           <p>My name is Alejandro Sobko, I'm 24 years old, father of a son and a graduate software developer at the <a href="http://unq.edu.ar" target="_blank">Universidad Nacional de Quilmes</a></p>
           <p>I'm a passionate about technologies, I'm continue reading about new frameworks and tools. Also I love the information security and exploit of vulnerabilities.</p>
           <p>In my free times I love to have fun with my son :)</p>
@@ -67,111 +72,101 @@
 
     <div id="skills" class="full-page">
       <h1 id="section-title">Skills</h1>
-      <div id="reference" class="padding-left-20">
+      <div id="reference">
         <span>Reference:</span>
-        <div>
-          <span class="star">★</span> I just know what it is
-        </div>
-        <div>
-          <span class="star">★★</span> Basic skills
-        </div>
-        <div>
-          <span class="star">★★★</span> Intermediate skills. I have experience with this
-        </div>
-        <div>
-          <span class="star">★★★★</span> Advanced skills. I have a good experience with this (2 years or more)
-        </div>
-        <div>
-          <span class="star">★★★★★</span> I'm a ninja
-        </div>
+        <div><span class="star">★</span> I just know what it is</div>
+        <div><span class="star">★★</span> Basic skills</div>
+        <div><span class="star">★★★</span> Intermediate skills</div>
+        <div><span class="star">★★★★</span> Advanced skills</div>
+        <div><span class="star">★★★★★</span> I'm a ninja</div>
       </div>
 
-      <div class="padding-left-20">
+      <div>
         <br>
         <span>Habilities:</span>
-        <div id="habilities">
-          <div>
+        <div id="habilities" class="row">
+          <div class="col-xs-4 col-sm-2">
             <img src="images/html.png" alt="HTML">
-            <span>HTML</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">HTML</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/html5.png" alt="HTML5">
-            <span>HTML5</span>
-            <span class="star">★★</span>
+            <span class="col-xs-12">HTML5</span>
+            <span class="col-xs-12 star">★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/css.png" alt="CSS">
-            <span>CSS</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">CSS</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/css3.png" alt="CSS3">
-            <span>CSS3</span>
-            <span class="star">★★</span>
+            <span class="col-xs-12">CSS3</span>
+            <span class="col-xs-12 star">★★</span>
           </div>
           
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/js.png" alt="Javascript">
-            <span>Javascript</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">Javascript</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
           
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/backbone.png" alt="Backbone JS">
-            <span>BackboneJS</span>
-            <span class="star">★★★</span>
+            <span class="col-xs-12">BackboneJS</span>
+            <span class="col-xs-12 star">★★★</span>
           </div>
           
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/ember.png" alt="EmberJS">
-            <span>EmberJS</span>
-            <span class="star">★★★</span>
+            <span class="col-xs-12">EmberJS</span>
+            <span class="col-xs-12 star">★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/oop.png" alt="Object Oriented Programming">
-            <span>OOP</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">OOP</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/java.png" alt="Java">
-            <span>Java</span>
-            <span class="star">★★★</span>
+            <span class="col-xs-12">Java</span>
+            <span class="col-xs-12 star">★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/rails.png" alt="Ruby on Rails">
-            <span>RoR</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">RoR</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
             
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/django.png" alt="Django">
-            <span>Django</span>
-            <span class="star">★★</span>
+            <span class="col-xs-12">Django</span>
+            <span class="col-xs-12 star">★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/git.png" alt="Git">
-            <span>Git</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">Git</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/linux.png" alt="Linux">
-            <span>Linux</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">Linux</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
 
-          <div>
+          <div class="col-xs-4 col-sm-2">
             <img src="images/database.png" alt="Databases">
-            <span>Databases</span>
-            <span class="star">★★★★</span>
+            <span class="col-xs-12">SQL</span>
+            <span class="col-xs-12 star">★★★★</span>
           </div>
         </div>
       </div>
