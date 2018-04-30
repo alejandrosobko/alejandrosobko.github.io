@@ -28,14 +28,14 @@ a {
 }
 
 .header .show-more {
-    /* center */
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    margin-top: 10%;
-    /* effect */
-    -webkit-animation: fadeInOut 6s;
-    animation: fadeInOut 6s;
+  /* center */
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 10%;
+  /* effect */
+  -webkit-animation: fadeInOut 6s;
+  animation: fadeInOut 6s;
 }
 
 .header .show-more a {
@@ -263,6 +263,7 @@ div #profile-about{
 
 #habilities div {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #habilities img {
