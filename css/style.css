@@ -1,12 +1,3 @@
-html {
-  font-family: 'Montserrat', sans-serif;
-}
-
-html, body { 
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -16,9 +7,6 @@ a {
 }
 
 /* HEADER */
-
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 .header {
   font-family: 'Anonymous Pro', monospace;  
@@ -79,13 +67,13 @@ a {
     left: 0;
     margin: auto;
     width: 100%;
+    z-index: 9999;
   }
 
   nav {
     background: black;
     border-bottom: 2px solid #1cd4da;
-    display: flex;
-    justify-content: space-between;
+    height: 80px;
   }
 
   nav .logo {
@@ -94,30 +82,37 @@ a {
 
   nav ul {
     list-style: none;
-    display: flex;
-    align-items: center;
-    margin-right: 5%;
+    float: right;
+    margin-top: 12px;
   }
 
   nav ul li {
     display: inline-block;
-    font-weight: bold;
   }
 
   nav ul .section {
-    margin-left: auto;
     padding: 15px;
-    margin-right: 5%;
   }
 
   nav ul .section:hover {
-    background: #8f8f8f;
+    background: #8e8e8ec7;
     cursor: pointer;
     border-radius: 5px;
   }
 
   nav ul li a {
+    font-size: 18px;
     color: #fff;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li a:focus {
+    color: #fff;
+    text-decoration: none;
   }
 
   nav img { 
@@ -233,11 +228,6 @@ a {
   padding-top: 70px;
 }
 
-#content {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 #content h1#section-title {
   width: 190px;
   margin: 0 auto;
@@ -247,22 +237,14 @@ a {
   margin-bottom: 100px;
 }
 
-.padding-left-20 {
-  margin-left: 15%;
-  margin-right: 8%;
-}
-
 img.profile {
-  width: 330px;
   border-radius: 20px;
   display: inline-block;
 }
 
 div #profile-about{
   display: inline-block;
-  margin-left: 50px;
   vertical-align: top;
-  width: 60%;
 }
 
 .star {
@@ -277,17 +259,10 @@ div #profile-about{
 
 #habilities {
   margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 #habilities div {
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 130px;
 }
 
 #habilities img {
@@ -297,39 +272,4 @@ div #profile-about{
 
 #habilities span {
   margin-top: 10px;
-}
-
-
-/* Settings for small screens */
-@media screen and (max-width: 450px) {
-  img.profile {
-    width: 190px;
-  }
-
-  div #profile-about{
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .padding-left-20 {
-    margin-right: 3%;
-  }
-
-  #habilities div {
-    flex-basis: 110px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  img.profile {
-    width: 190px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  #about img.profile {
-    margin-left: 10%;
-  }
 }
