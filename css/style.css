@@ -29,12 +29,14 @@ a {
 }
 
 .header .console-text {
-  width: 53%;
+  width: fit-content;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .header .console-text h1 {
   font-weight: 100;
+  font-size: 26px;
 }
 
 .header .show-more {
@@ -44,8 +46,8 @@ a {
     text-align: center;
     margin-top: 10%;
     /* effect */
-    -webkit-animation: fadeInOut 28s;
-    animation: fadeInOut 28s;
+    -webkit-animation: fadeInOut 6s;
+    animation: fadeInOut 6s;
 }
 
 .header .show-more a {
@@ -54,6 +56,10 @@ a {
   padding: 10px;
   color: white;
   border: 1px solid white;
+}
+
+.header .show-more a:hover {
+  background-color: #4f3f5b;
 }
 
 @keyframes fadeInOut {
@@ -67,31 +73,51 @@ a {
 @media screen and (min-width: 800px) {
   .hamburguer-menu { display: none; }
 
+  .navbar-wraper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+  }
+
   nav {
     background: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1.5px solid #1cd4da;
+    border-bottom: 2px solid #1cd4da;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    padding: 20px;
   }
 
   nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
   }
 
   nav ul li {
-    padding: 10px;
-    width: 20%;
+    display: inline-block;
+    font-weight: bold;
   }
 
-  nav ul li a {
-    color: #fff;
-    line-height: 37px;
+  nav ul .section {
+    margin-left: auto;
+    padding: 15px;
+    margin-right: 5%;
   }
 
   nav ul .section:hover {
     background: #8f8f8f;
     cursor: pointer;
     border-radius: 5px;
+  }
+
+  nav ul li a {
+    color: #fff;
   }
 
   nav img { 

@@ -9,11 +9,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 var showNavbar = function() {
-    var headerHeight = $('.header').height() - 100;
+    var headerHeight = $('.header').height();
     if($(window).scrollTop() > headerHeight) {
-        $('nav').removeClass('hidden-content');
+        $('nav').parent().removeClass('hidden-content');
     } else if($(window).scrollTop() < headerHeight) {
-        $('nav').addClass('hidden-content');
+        $('nav').parent().addClass('hidden-content');
     }
 };
 
