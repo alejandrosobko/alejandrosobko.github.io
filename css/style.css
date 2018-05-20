@@ -18,6 +18,7 @@ a {
 
 .header .console-text {
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto;
   padding: 30px;
 }
