@@ -6,6 +6,10 @@ a {
   display: none;
 }
 
+span, p {
+  font-size: 16px;
+}
+
 /* HEADER */
 
 .header {
@@ -23,9 +27,9 @@ a {
   padding: 30px;
 }
 
-.header .console-text h1 {
+.header .console-text h1 span {
   font-weight: 100;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .header .show-more {
@@ -255,8 +259,7 @@ img.profile {
 }
 
 div #profile-about{
-  display: inline-block;
-  vertical-align: top;
+  margin-top: 10px;
 }
 
 .star {
@@ -264,7 +267,7 @@ div #profile-about{
   font-size: 20px;
 }
 
-#reference div span {
+#reference div span.star {
   display: inline-block;
   width: 100px;
 }
