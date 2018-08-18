@@ -9,8 +9,8 @@ a {
 /* HEADER */
 
 .header {
-  font-family: 'Anonymous Pro', monospace;  
-  background-color: #28152f; 
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #28152f;
   color: rgba(255,255,255,.75);
   height: 100vh;
   padding-top: 5%;
@@ -116,7 +116,7 @@ a {
     text-decoration: none;
   }
 
-  nav img { 
+  nav img {
     width: 40px;
     vertical-align: middle;
   }
@@ -147,10 +147,16 @@ a {
             box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
   }
+  label.hamburguer-menu .menu .hamburger {
+    top: 135px;
+    left: 35px;
+  }
+  label.hamburguer-menu input:checked + .menu .hamburger {
+    top: 140px;
+    left: 30px;
+  }
   label.hamburguer-menu .hamburger {
     position: absolute;
-    top: 135px;
-    left: 30px;
     width: 30px;
     height: 2px;
     background: #000;
@@ -201,6 +207,11 @@ a {
   label.hamburguer-menu input:checked + .menu + ul {
     opacity: 1;
   }
+
+  label.hamburguer-menu input:not(:checked) + .menu + ul {
+    visibility: hidden;
+  }
+
   label.hamburguer-menu ul {
     font-size: 25px;
     list-style: none;
@@ -211,8 +222,8 @@ a {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
+    -webkit-transition: .25s 0s step-end;
+    transition: .25s 0s step-end;
   }
 
   label.hamburguer-menu a {
