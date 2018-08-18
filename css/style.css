@@ -17,7 +17,6 @@ span, p {
   background-color: #28152f;
   color: rgba(255,255,255,.75);
   height: 100vh;
-  padding-top: 5%;
 }
 
 .header .console-text {
@@ -25,6 +24,7 @@ span, p {
   width: -moz-fit-content;
   margin: 0 auto;
   padding: 30px;
+  padding-top: 10%;
 }
 
 .header .console-text h1 span {
@@ -33,9 +33,11 @@ span, p {
 }
 
 .header .show-more {
+  position: absolute;
+  z-index: 2;
   /* center */
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   text-align: center;
   margin-top: 10%;
   /* effect */
@@ -288,4 +290,10 @@ div #profile-about{
 
 #habilities span {
   margin-top: 10px;
+}
+
+#particles-js canvas{
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
 }
