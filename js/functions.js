@@ -26,5 +26,11 @@ $(document).ready(function() {
         showNavbar();
     });
 
-    $('#my-years').text(new Date().getFullYear() - 1993); // set my current years
+    $('#my-years').text(calculateAge(new Date(1993, 08, 09)));
 });
+
+function calculateAge(birthday) {
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
