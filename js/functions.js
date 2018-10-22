@@ -25,4 +25,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         showNavbar();
     });
+
+    $('#my-years').text(new Date().getFullYear() - 1993); // set my current years
 });
