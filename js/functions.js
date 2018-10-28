@@ -6,7 +6,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 'slow');
 
     $('label.hamburguer-menu input').prop('checked', false);
 });
@@ -34,3 +34,7 @@ function calculateAge(birthday) {
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
+
+$('#go-to-top').on('click', function(event) {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+})
