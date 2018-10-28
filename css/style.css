@@ -236,6 +236,7 @@ span, p {
 }
 
 #wrapperContainer {
+  font-family: 'Montserrat', Courier, monospace;
   position: relative;
   z-index: 9;
   background-color: white;
@@ -331,11 +332,14 @@ div #profile-about{
 /* FIN EXPERIENCE */
 
 /* CONTACT */
+#contact .container {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 #empty-form-alert {
   animation: fadeInOut 1.5s linear;
 }
 /* FIN CONTACT */
-
 
 .no-padding {
   padding: 0 !important;
