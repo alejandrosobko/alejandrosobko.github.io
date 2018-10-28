@@ -60,12 +60,6 @@ span, p {
   background-color: #4f3f5b;
 }
 
-@keyframes fadeInOut {
-  0% { opacity: 0; }
-  80% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 @media screen and (min-width: 800px) {
   .hamburguer-menu { display: none; }
 
@@ -413,6 +407,9 @@ div #profile-about{
 /* FIN EXPERIENCE */
 
 /* CONTACT */
+#empty-form-alert {
+  animation: fadeInOut 1.5s linear;
+}
 /* FIN CONTACT */
 
 
@@ -422,4 +419,11 @@ div #profile-about{
 
 #services .no-padding {
   border: 1px solid white;
+}
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
 }

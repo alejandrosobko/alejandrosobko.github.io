@@ -38,3 +38,18 @@ function calculateAge(birthday) {
 $('#go-to-top').on('click', function(event) {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
 })
+
+$('#send-contact-form').on('click', function(event) {
+    const $form = $(event.currentTarget).parents('.form-horizontal');
+    const $name = $form.find('#inputName');
+    const $email = $form.find('#inputEmail');
+    const $body = $form.find('#inputBody');
+    const $emptyFormAlert = $form.find('#empty-form-alert');
+
+    if (!$name.val() || !$email.val() || !$body.val()) {
+        event.preventDefault();
+        $emptyFormAlert.text('Nothing to say? Hmm... I would love to read your opinion!');
+    } else {
+        $emptyFormAlert.text('Message sent! Thanks!');
+    }
+})

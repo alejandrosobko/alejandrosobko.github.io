@@ -203,7 +203,25 @@
 
       <div id="contact" class="full-page">
         <h1 id="section-title">Contact</h1>
-        <p>This sections is for contact to me. To be completed!</p>
+        <div class="container">
+          <div class="col-xs-6">
+            <form class="form-horizontal" method="POST" action="https://formspree.io/alejandro.sobko@gmail.com">
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="What's your name?">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Email (I won't spam you ever)">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="" id="inputBody" name="body" cols="30" rows="10" placeholder="Hi Alejandro, awesome website! Please make one for me."></textarea>
+              </div>
+              <div class="form-group">
+                <button id="send-contact-form" class="btn btn-md">Send</button>
+                <span id="empty-form-alert"></span>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
