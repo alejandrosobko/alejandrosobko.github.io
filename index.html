@@ -23,7 +23,7 @@
       </h1>
     </div>
     <div class="show-more">
-      <a href="#content">Show more ↓</a>
+      <a href="#about">Show more ↓</a>
     </div>
   </div>
 
@@ -60,7 +60,7 @@
 
   <div id="wrapperContainer">
     <div id="content" class="container-fluid">
-      <div id="about" class="container full-page">
+      <div id="about" class="container middle-page">
         <h1 id="section-title">About</h1>
         <div>
           <img class="profile col-xs-12 col-sm-3" src="images/profile.png" alt="Profile image">
@@ -196,10 +196,10 @@
         </div>
       </div>
 
-      <div id="contact" class="full-page">
+      <div id="contact" class="row pre-full-page">
         <h1 id="section-title">Contact</h1>
         <div class="container">
-          <div class="col-xs-12 col-md-6">
+          <div class="form-container col-xs-12 col-md-6">
             <form class="form-horizontal" method="POST" action="https://formspree.io/alejandro.sobko@gmail.com">
               <div class="form-group">
                 <input type="text" class="form-control" id="inputName" name="name" placeholder="What's your name?">
@@ -211,10 +211,19 @@
                 <textarea class="form-control" name="" id="inputBody" name="body" cols="30" rows="10" placeholder="Hi Alejandro, awesome website! Please make one for me."></textarea>
               </div>
               <div class="form-group">
-                <button id="send-contact-form" class="btn col-xs-3">Send</button>
+                <button id="send-contact-form" class="btn btn-success col-xs-3">Send</button>
                 <span id="empty-form-alert" class="col-xs-9"></span>
               </div>
             </form>
+          </div>
+          <div class="col-xs-12 col-md-3 col-md-offset-2">
+            <div>
+              <h4>... or find me on</h4>
+
+              <a target=_blank href="https://www.github.com/alejandrosobko"><img class="contact-logo" src="images/logos/github_logo.png" alt="github logo"></a>
+              <a target=_blank href="https://twitter.com/alejandrosobko"><img class="contact-logo" src="images/logos/twitter_logo.png" alt="twitter logo"></a>
+              <a target=_blank href="https://www.linkedin.com/in/alejandrosobko"><img class="contact-logo" src="images/logos/linkedin_logo.png" alt="linkedin logo"></a>
+            </div>
           </div>
         </div>
       </div>

@@ -246,7 +246,19 @@ span, p {
 .full-page {
   min-height: 100vh;
   background: white;
-  padding-top: 70px;
+  margin-top: 70px;
+}
+
+.pre-full-page {
+  min-height: 80vh;
+  background: white;
+  margin-top: 70px;
+}
+
+.middle-page {
+  min-height: 60vh;
+  background: white;
+  margin-top: 70px;
 }
 
 #content h1#section-title {
@@ -332,6 +344,11 @@ div #profile-about{
 /* FIN EXPERIENCE */
 
 /* CONTACT */
+#contact {
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+
 #contact .container {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -339,6 +356,16 @@ div #profile-about{
 #empty-form-alert {
   animation: fadeInOut 1.5s linear;
 }
+
+.contact-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+#contact .social-network {
+  margin-bottom: 10px;
+}
+
 /* FIN CONTACT */
 
 .no-padding {
