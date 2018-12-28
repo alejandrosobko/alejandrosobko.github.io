@@ -343,6 +343,18 @@ div #profile-about{
 }
 /* FIN EXPERIENCE */
 
+/* ARTICLES */
+#articles .box {
+  text-align: center
+}
+
+#articles .box img {
+  border: 1px solid #9898ff3b;
+  border-radius: 5px;
+}
+
+/* FIN ARTICLES */
+
 /* CONTACT */
 #contact {
   background-color: #f7f7f7;
