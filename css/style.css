@@ -10,6 +10,11 @@ span, p {
   font-size: 16px;
 }
 
+.maxx {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /* HEADER */
 .header {
   font-family: 'Anonymous Pro', monospace;
@@ -58,6 +63,7 @@ span, p {
 
 .header .show-more a:hover {
   background-color: #4f3f5b;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -252,7 +258,6 @@ span, p {
 .pre-full-page {
   min-height: 80vh;
   background: white;
-  margin-top: 70px;
 }
 
 .middle-page {
@@ -262,7 +267,7 @@ span, p {
 }
 
 #content h1#section-title {
-  width: 190px;
+  width: fit-content;
   margin: 0 auto;
   text-align: center;
   padding-top: 40px;
@@ -287,10 +292,50 @@ img.profile {
 div #profile-about{
   margin-top: 10px;
 }
+
+.work-process {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 1em;
+}
+
+.work-process .icon-container {
+  display: inline-block;
+  transform: rotate(45deg);
+  border: 1px solid #cecece;
+  -webkit-transform: rotate(45deg);
+  border-radius: 3px;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  margin-right: 1em;
+}
+
+.work-process i:before {
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+.work-process .fa-code {
+  color: #00ffcc;
+}
+
+.work-process .fa-heart {
+  color: red;
+}
+
+.work-process .fa-gem {
+  color: #71b4ec;
+}
 /* FIN ABOUT */
 
 
 /* SKILLS */
+
+#skills {
+  background: #f8f8f8;
+}
+
 .star {
   color: rgb(221, 218, 30);
   font-size: 20px;
@@ -327,37 +372,35 @@ div #profile-about{
   }
 }
 
-.cards .card {
-  margin: 5px;
+#experience .card img {
+  border: 1px solid #f0f0f0;
 }
 
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.mobile .portfolio-box {
-  max-width: 250px;
-}
 /* FIN EXPERIENCE */
 
-/* ARTICLES */
-#articles .box {
-  text-align: center
+/* BLOG */
+#blog {
+  background: #f8f8f8;
 }
 
-#articles .box img {
+#blog .box {
+  text-align: center;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  padding-bottom: 5px;
+}
+
+#blog .box img {
   border: 1px solid #9898ff3b;
   border-radius: 5px;
+  width: 100%;
 }
-
 /* FIN ARTICLES */
 
 /* CONTACT */
 #contact {
-  background-color: #f7f7f7;
+  background-color: #505393;
+  color: white;
   padding-bottom: 50px;
 }
 
