@@ -356,9 +356,15 @@ div #profile-about{
 }
 
 #habilities img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 90px;
 }
+
+#habilities img#js-logo, #habilities img#html-logo, #habilities img#database-logo  {
+  width: 65px;
+  height: 90px;
+}
+
 
 #habilities span {
   margin-top: 10px;
@@ -374,6 +380,7 @@ div #profile-about{
 
 #experience .card img {
   border: 1px solid #f0f0f0;
+  height: 400px;
 }
 
 /* FIN EXPERIENCE */
