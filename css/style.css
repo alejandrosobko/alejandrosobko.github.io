@@ -380,21 +380,62 @@ div #profile-about{
 /* FIN SKILLS */
 
 /* EXPERIENCE */
-#experience #unpie .exp-card {
-  background-image: url("../images/experience/unpieyotropie.jpg");
+#experience a {
+  color: white;
 }
 
-#experience #construcciones .exp-card {
-  background-image: url("../images/experience/construcciones.jpg");
+.exp-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-#experience .exp-card {
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+.exp-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
+.exp-box-caption:hover {
+  opacity: 1;
+}
+
+.exp-box-caption-content {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.exp-inside.exp-show-more {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  font-size: 20px;
+}
+
+.exp-inside.exp-show-more a {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.project-name.text-faded {
+  font-size: 25px;
+}
+
+.project-tech {
+  font-size: 18px;
+  color: #ff93ca;
+}
 /* FIN EXPERIENCE */
 
 /* BLOG */
