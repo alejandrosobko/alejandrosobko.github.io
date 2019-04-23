@@ -52,7 +52,6 @@ span, p {
 }
 
 .header .show-more a {
-  font-family: inherit;
   font-size: 20px;
   padding: 10px;
   color: white;
@@ -445,7 +444,6 @@ div #profile-about{
 
 #blog .box {
   background-color: white;
-  text-align: center;
   border-radius: 20px;
   padding-bottom: 5px;
 }
@@ -462,6 +460,7 @@ div #profile-about{
   margin-top: 30px;
   font-size: 22px;
   line-height: 30px;
+  font-weight: 200;
 }
 
 #blog .box img {
