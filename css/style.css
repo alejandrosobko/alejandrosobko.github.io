@@ -4,6 +4,7 @@ a {
 
 .hidden-content {
   display: none;
+  visibility: hidden;
 }
 
 span, p {
@@ -15,19 +16,33 @@ span, p {
   padding-right: 0px;
 }
 
-/* HEADER */
-.header {
+header {
   font-family: 'Anonymous Pro', monospace;
-  background-color: #28152f;
-  color: rgba(255,255,255,.75);
-  height: 100vh;
-  z-index: 1;
   position: fixed;
-  width: 100%;
+  height: 100vh;
   top: 0;
+  color: white;
 }
 
-.header .console-text {
+header #header-img {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  filter: brightness(45%);
+  background-image: url('../images/header-wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header #header-text {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+header .console-text {
   width: fit-content;
   width: -moz-fit-content;
   margin: 0 auto;
@@ -35,12 +50,12 @@ span, p {
   padding-top: 10%;
 }
 
-.header .console-text h1 span {
+header .console-text h1 span {
   font-weight: 100;
   font-size: 30px;
 }
 
-.header .show-more {
+header .show-more {
   position: absolute;
   z-index: 2;
   /* center */
@@ -51,15 +66,16 @@ span, p {
   animation: 1s fadeInOut;
 }
 
-.header .show-more a {
+header .show-more a {
   font-size: 20px;
   padding: 10px;
   color: white;
   border: 1px solid white;
 }
 
-.header .show-more a:hover {
-  background-color: #4f3f5b;
+header .show-more a:hover {
+  color: white;
+  border-color: #59d1ff;
   text-decoration: none;
 }
 
@@ -247,16 +263,6 @@ span, p {
 
 }
 
-/*
-.fullScreen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-*/
-
-
 .full-page {
   min-height: 100vh;
   background: white;
@@ -283,13 +289,6 @@ span, p {
   border-bottom: 1px solid;
   margin-bottom: 100px;
 }
-
-#particles-js canvas{
-  position: absolute;
-  z-index: 1;
-  opacity: 0.6;
-}
-/* FIN HEADER */
 
 
 /* ABOUT */
@@ -342,7 +341,7 @@ div #profile-about{
 /* SKILLS */
 
 #skills {
-  background: #f8f8f8;
+  background: #f3f3f3;
 }
 
 .star {
@@ -437,12 +436,31 @@ div #profile-about{
 }
 /* FIN EXPERIENCE */
 
+/* SERVICES */
+
+#services {
+  height: 60vh;
+  background-image: url('../images/services/services-wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 90px 0;
+}
+
+#services #services-wrapper {
+  color: white;
+}
+
+/* FIN SERVICES */
+
 /* BLOG */
 #blog {
-  background: #f8f8f8;
+  background: #f3f3f3;
 }
 
 #blog .box {
+  padding: 0;
   background-color: white;
   border-radius: 20px;
   padding-bottom: 5px;
@@ -450,10 +468,11 @@ div #profile-about{
 
 #blog .box a {
   color: orangered;
+
 }
 
 .blog-description {
-  height: 160px;
+  height: 200px;
 }
 
 .blog-description h5 {

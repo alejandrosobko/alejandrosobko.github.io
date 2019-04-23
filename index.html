@@ -14,19 +14,20 @@
 </head>
 
 <body>
-  <div class="header" id="welcome">
-    <div id="particles-js"></div>
-
-    <div class="console-text">
-      <h1>
-        <span class="typer" id="main" data-words="Hi! I'm Alejandro Sobko, full stack developer" data-delim="/" data-colors="white" data-delay="100" data-deleteDelay="3000" data-loop="1" data-delete-last="false"></span>
-        <span class="cursor" data-owner="main"></span>
-      </h1>
+  <header>
+    <div id="header-img"></div>
+    <div id="header-text">
+      <div class="console-text">
+        <h1>
+          <span class="typer" id="main" data-words="Hi! I'm Alejandro Sobko, full stack developer" data-delim="/" data-colors="white" data-delay="100" data-deleteDelay="3000" data-loop="1" data-delete-last="false"></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
+      </div>
+      <div class="show-more">
+        <a href="#about">Show more ↓</a>
+      </div>
     </div>
-    <div class="show-more">
-      <a href="#about">Show more ↓</a>
-    </div>
-  </div>
+  </header>
 
   <!-- menu for large screens -->
   <div class="hidden-content navbar-wraper">
@@ -189,13 +190,27 @@
         </div>
       </div>
 
+      <div id="services">
+        <div id="services-wrapper" class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>My services</h2>
+              <p>asdjklasdjk asjdk ljaskd jasd jas djlsak jdkasd </p>
+              <p>asdjklasdjk asjdk ljaskd jasd jas djlsak jdkasd </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="blog" class="container-fluid full-page">
         <h1 id="section-title">BLOG</h1>
 
         <div class="container">
           <div class="col-xs-12 col-sm-4 box">
-            <img src="images/beautiful_dnd.gif" alt="gif">
-            <div class="blog-description">
+            <a href="https://blog.devartis.com/beautiful-drag-and-drop-with-react-the-beginners-guide-7798e3928290" target="_blank">
+              <img src="images/beautiful_dnd.gif" alt="gif">
+            </a>
+            <div class="blog-description container-fluid">
               <h5>Beautiful drag and drop with React — The beginner’s guide</h5>
               <p>Understand this library by creating a kids video game</p>
               <a href="https://blog.devartis.com/beautiful-drag-and-drop-with-react-the-beginners-guide-7798e3928290" target="_blank"> Read more...</a>
@@ -243,7 +258,6 @@
     </div>
   </div>
 
-  <script src="js/particles.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/typer.js"></script>
   <script defer src="js/functions.js"></script>
