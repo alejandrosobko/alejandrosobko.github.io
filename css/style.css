@@ -370,15 +370,9 @@ div #profile-about{
 }
 
 #habilities img {
-  max-width: 90px;
-  height: 90px;
+  max-width: 120px;
+  height: 110px;
 }
-
-#habilities img#js-logo, #habilities img#html-logo, #habilities img#database-logo  {
-  width: 65px;
-  height: 90px;
-}
-
 
 #habilities span {
   margin-top: 10px;
