@@ -444,18 +444,33 @@ div #profile-about{
 }
 
 #blog .box {
+  background-color: white;
   text-align: center;
-  border: 1px solid #cbcbcb;
-  border-radius: 3px;
+  border-radius: 20px;
   padding-bottom: 5px;
 }
 
+#blog .box a {
+  color: orangered;
+}
+
+.blog-description {
+  height: 160px;
+}
+
+.blog-description h5 {
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
 #blog .box img {
-  border: 1px solid #9898ff3b;
-  border-radius: 5px;
+  border-bottom: 1px solid #9898ff3b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 100%;
 }
-/* FIN ARTICLES */
+/* FIN BLOG */
 
 /* CONTACT */
 #contact {
