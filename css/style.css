@@ -48,9 +48,7 @@ span, p {
   width: 100%;
   text-align: center;
   margin-top: 10%;
-  /* effect */
-  -webkit-animation: fadeInOut 6s;
-  animation: fadeInOut 6s;
+  animation: 1s fadeInOut;
 }
 
 .header .show-more a {
@@ -79,19 +77,19 @@ span, p {
   }
 
   nav {
-    background: black;
-    border-bottom: 2px solid #1cd4da;
-    height: 70px;
+    background: #00103c;
+    border-bottom: 3px solid #1cd4da;
+    height: 60px;
   }
 
   nav .logo {
-    padding: 15px;
+    padding: 10px;
   }
 
   nav ul {
     list-style: none;
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   nav ul li {
@@ -99,7 +97,7 @@ span, p {
   }
 
   nav ul .section {
-    padding: 15px 15px 5px 15px;
+    padding: 12px 15px 2px 15px;
   }
 
   nav ul .section:hover {
@@ -109,7 +107,7 @@ span, p {
   }
 
   nav ul li a {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
   }
 
@@ -247,7 +245,18 @@ span, p {
   z-index: 9;
   background-color: white;
   margin-top: 100vh;
+
 }
+
+/*
+.fullScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
 
 .full-page {
   min-height: 100vh;
@@ -356,8 +365,12 @@ div #profile-about{
   text-align: center;
 }
 
+#habilities img:hover {
+  filter: brightness(120%);
+}
+
 #habilities img {
-  width: 90px;
+  max-width: 90px;
   height: 90px;
 }
 
@@ -373,15 +386,19 @@ div #profile-about{
 /* FIN SKILLS */
 
 /* EXPERIENCE */
-@media screen and (min-width: 990px) {
-  #experience .cards {
-    margin-left: 15%;
-  }
+#experience #unpie .exp-card {
+  background-image: url("../images/experience/unpieyotropie.jpg");
 }
 
-#experience .card img {
-  border: 1px solid #f0f0f0;
-  height: 400px;
+#experience #construcciones .exp-card {
+  background-image: url("../images/experience/construccionesrodriguez.png");
+}
+
+#experience .exp-card {
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* FIN EXPERIENCE */
