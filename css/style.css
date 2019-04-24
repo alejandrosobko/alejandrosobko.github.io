@@ -62,8 +62,7 @@ header .show-more {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  margin-top: 10%;
-  animation: 1s fadeInOut;
+  margin-top: 30%;
 }
 
 header .show-more a {

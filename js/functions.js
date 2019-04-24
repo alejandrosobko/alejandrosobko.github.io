@@ -8,8 +8,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('label.hamburguer-menu input').prop('checked', false);
 });
 
-var showNavbar = function() {
-    var headerHeight = $('header').height() - 40;
+const showNavbar = function() {
+    const headerHeight = $('header').height() - 40;
     if($(window).scrollTop() > headerHeight) {
         $('nav').parent().removeClass('hidden-content');
     } else if($(window).scrollTop() < headerHeight) {
@@ -19,6 +19,8 @@ var showNavbar = function() {
 
 
 $(document).ready(function() {
+    AOS.init();
+
     $(window).scroll(function() {
         showNavbar();
     });
@@ -27,8 +29,8 @@ $(document).ready(function() {
 });
 
 function calculateAge(birthday) {
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    const ageDifMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDifMs); // miliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
