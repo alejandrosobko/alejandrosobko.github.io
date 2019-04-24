@@ -2,7 +2,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 50
+        scrollTop: $($.attr(this, 'href')).offset().top
     }, 'slow');
 
     $('label.hamburguer-menu input').prop('checked', false);

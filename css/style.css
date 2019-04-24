@@ -266,7 +266,7 @@ header .show-more a:hover {
 .full-page {
   min-height: 100vh;
   background: white;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .pre-full-page {
@@ -277,19 +277,21 @@ header .show-more a:hover {
 .middle-page {
   min-height: 60vh;
   background: white;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
-#content h1#section-title {
-  width: fit-content;
-  width: -moz-fit-content;
+#content .section-title {
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+#content .section-title h1 {
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
   border-bottom: 1px solid;
-  margin-bottom: 100px;
+  width: fit-content;
+  width: -moz-fit-content;
 }
-
 
 /* ABOUT */
 img.profile {
@@ -354,6 +356,10 @@ div #profile-about{
   margin: 0 auto;
 }
 
+.exp-box img {
+  border-radius: 10px;
+}
+
 .exp-box-caption {
   color: white;
   opacity: 0;
@@ -364,6 +370,7 @@ div #profile-about{
   text-align: center;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -399,22 +406,44 @@ div #profile-about{
   font-size: 18px;
   color: #ff93ca;
 }
+
+
 /* FIN EXPERIENCE */
 
 /* SERVICES */
 
 #services {
-  height: 60vh;
-  background-image: url('../images/services/services-wallpaper.webp');
+  height: 70vh;
+  background-image: url('../images/services/services.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 90px 0;
+  padding: 30px 0 90px 0;
 }
 
 #services #services-wrapper {
   color: white;
+}
+
+#services svg {
+  width: 70px;
+  fill: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#services svg.light:hover {
+  fill: rgb(255, 241, 49);
+}
+
+#services svg.frontend:hover {
+  fill: rgb(49, 255, 193);
+}
+
+#services svg.backend:hover {
+  fill: rgb(255, 97, 49);
 }
 
 /* FIN SERVICES */
@@ -433,7 +462,6 @@ div #profile-about{
 
 #blog .box a {
   color: orangered;
-
 }
 
 .blog-description {
