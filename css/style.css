@@ -62,7 +62,7 @@ header .show-more {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 header .show-more a {
@@ -280,16 +280,21 @@ header .show-more a:hover {
 }
 
 #content .section-title {
-  padding-top: 40px;
+  padding-top: 10px;
   margin-bottom: 60px;
 }
 
 #content .section-title h1 {
   margin: 0 auto;
+  margin-bottom: 20px;
   text-align: center;
-  border-bottom: 1px solid;
-  width: fit-content;
-  width: -moz-fit-content;
+  letter-spacing: 3px;
+}
+
+#content .section-title p {
+  color: #777;
+  font-size: 18px;
+  font-family: sans-serif;
 }
 
 /* ABOUT */
@@ -491,6 +496,10 @@ div #profile-about{
 
 #contact .container {
   font-family: 'Courier New', Courier, monospace;
+}
+
+#contact .section-title {
+  margin-top: 30px;
 }
 
 #empty-form-alert {
