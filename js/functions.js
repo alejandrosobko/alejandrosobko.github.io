@@ -9,7 +9,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 const showNavbar = function() {
-    const headerHeight = $('header').height() - 40;
+    const headerHeight = $('header').height() - 70;
     if($(window).scrollTop() > headerHeight) {
         $('nav').parent().removeClass('hidden-content');
     } else if($(window).scrollTop() < headerHeight) {
