@@ -1,8 +1,10 @@
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
+    const offsetToScroll = possibleMobile() ? 0 : 20;
+
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 20
+        scrollTop: $($.attr(this, 'href')).offset().top - offsetToScroll
     }, 'slow');
 
     $('label.hamburguer-menu input').prop('checked', false);
@@ -52,3 +54,7 @@ $('#send-contact-form').on('click', function(event) {
         $emptyFormAlert.text('Message sent! Thanks!');
     }
 })
+
+function possibleMobile() {
+    return window.innerWidth <= 800;
+}

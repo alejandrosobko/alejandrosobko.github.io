@@ -314,6 +314,12 @@ img.profile {
   display: inline-block;
 }
 
+@media screen and (max-width: 765px) {
+  img.profile {
+    margin-bottom: 60px;
+  }
+}
+
 div #profile-about{
   margin-top: 10px;
 }
@@ -374,6 +380,7 @@ div #profile-about{
   display: block;
   max-width: 650px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .exp-box img {
@@ -432,8 +439,13 @@ div #profile-about{
 
 /* SERVICES */
 
+@media screen and (min-width: 1000px) {
+  #services {
+    height: 70vh;
+  }
+}
+
 #services {
-  height: 70vh;
   background-image: url('../images/services/services.webp');
   background-size: cover;
   background-position: center;
@@ -448,6 +460,10 @@ div #profile-about{
 
 #services #services-wrapper {
   color: white;
+}
+
+#services .service-info {
+  margin-bottom: 40px;
 }
 
 #services svg {
@@ -473,6 +489,17 @@ div #profile-about{
 /* FIN SERVICES */
 
 /* BLOG */
+
+@media screen and (max-width: 765px) {
+  #blog .container {
+    margin-bottom: 80px;
+  }
+
+  .blog-description {
+    height: 280px !important;
+  }
+}
+
 #blog {
   background: #f3f3f3;
 }
