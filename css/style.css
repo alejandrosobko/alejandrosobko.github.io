@@ -526,13 +526,18 @@ div #profile-about{
   animation: fadeInOut 1.5s linear;
 }
 
-.contact-logo {
-  width: 50px;
+#contact .contact-logo {
+  width: 52px;
+  height: 50px;
   margin-right: 10px;
 }
 
-#contact .social-network {
-  margin-bottom: 10px;
+#contact .contact-logo:hover {
+  filter: brightness(130%);
+}
+
+#contact .github-svg-logo:hover {
+  fill: #313131;
 }
 
 #contact textarea {
