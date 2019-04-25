@@ -2,18 +2,25 @@ a {
   text-decoration: none;
 }
 
+p {
+  letter-spacing: 0.075em;
+}
+
 .hidden-content {
   display: none;
   visibility: hidden;
 }
 
-span, p {
-  font-size: 16px;
+.custom-hr {
+  width: 70px;
+  height: 4px;
+  background: #444649;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.maxx {
-  padding-left: 0px;
-  padding-right: 0px;
+span, p {
+  font-size: 16px;
 }
 
 header {
@@ -291,6 +298,10 @@ header .show-more a:hover {
   letter-spacing: 3px;
 }
 
+.section-title .custom-hr {
+  margin-bottom: 40px;
+}
+
 #content .section-title p {
   color: #777;
   font-size: 18px;
@@ -306,6 +317,11 @@ img.profile {
 div #profile-about{
   margin-top: 10px;
 }
+
+#about p {
+  color: #4b4b4b;
+}
+
 /* FIN ABOUT */
 
 
@@ -426,6 +442,10 @@ div #profile-about{
   padding: 30px 0 90px 0;
 }
 
+#services .custom-hr {
+  background-color: white;
+}
+
 #services #services-wrapper {
   color: white;
 }
@@ -515,15 +535,15 @@ div #profile-about{
   margin-bottom: 10px;
 }
 
+#contact textarea {
+  resize: vertical;
+}
+
+#contact .custom-hr {
+  background-color: white;
+}
+
 /* FIN CONTACT */
-
-.no-padding {
-  padding: 0 !important;
-}
-
-#services .no-padding {
-  border: 1px solid white;
-}
 
 
 @keyframes fadeInOut {
