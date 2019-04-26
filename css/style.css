@@ -516,7 +516,7 @@ div #profile-about{
 }
 
 .blog-description {
-  height: 200px;
+  height: 230px;
 }
 
 .blog-description h5 {
@@ -560,11 +560,11 @@ div #profile-about{
 }
 
 #contact .contact-logo:hover {
-  filter: brightness(130%);
+  filter: brightness(140%);
 }
 
 #contact .github-svg-logo:hover {
-  fill: #313131;
+  fill: white;
 }
 
 #contact textarea {
