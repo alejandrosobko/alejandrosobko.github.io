@@ -15,7 +15,9 @@ var Typer = function(element) {
   this.element.style.color = this.colors[0];
   this.colorIndex = 0;
 
-  this.doTyping();
+  setTimeout(() => {
+    this.doTyping();
+  }, 2000);
 };
 
 Typer.prototype.start = function() {
