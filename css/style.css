@@ -567,9 +567,13 @@ div #profile-about{
 
 /* CONTACT */
 #contact {
-  background-color: #505393;
   color: white;
   padding-bottom: 50px;
+  background-image: url('../images/contact/contact-wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #contact form {
