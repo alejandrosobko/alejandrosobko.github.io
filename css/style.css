@@ -608,6 +608,13 @@ div #profile-about{
 
 /* FIN CONTACT */
 
+footer {
+  background: #16173f;
+  color: #fff;
+  height: 150px;
+  padding: 70px;
+  font-size: 17px;
+}
 
 @keyframes fadeInOut {
   0% { opacity: 0; }
