@@ -47,11 +47,17 @@ $('#send-contact-form').on('click', function(event) {
     const $body = $form.find('#inputBody');
     const $emptyFormAlert = $form.find('#empty-form-alert');
 
-    if (!$name.val() || !$email.val() || !$body.val()) {
+    if(!$name.val()) {
         event.preventDefault();
-        $emptyFormAlert.text('Nothing to say? Hmm... I would love to read your opinion!');
+        $emptyFormAlert.text('Sin nombre no sé a quién le respondo.');
+    } else if(!$email.val()) {
+        event.preventDefault();
+        $emptyFormAlert.text('¡El email es muy importante!');
+    } else if(!$body.val()) {
+        event.preventDefault();
+        $emptyFormAlert.text('Vamos, unas palabras más...');
     } else {
-        $emptyFormAlert.text('Message sent! Thanks!');
+        $emptyFormAlert.text('¡Mensaje enviado, gracias!');
     }
 })
 
