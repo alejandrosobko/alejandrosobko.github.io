@@ -638,9 +638,14 @@ div #profile-about{
 footer {
   background: #16173f;
   color: #fff;
-  height: 150px;
-  padding: 70px;
+  height: 75px;
+  padding: 25px;
   font-size: 17px;
+}
+
+.heart-emoji {
+  color: red;
+  font-size: 20px;
 }
 
 @keyframes fadeInOut {
