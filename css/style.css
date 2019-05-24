@@ -114,7 +114,7 @@ header .show-more a:hover {
   }
 
   nav {
-    background: #00103c;
+    background: #00103ceb;
     border-bottom: 3px solid #1cd4da;
     height: 60px;
   }
@@ -296,12 +296,6 @@ header .show-more a:hover {
   background: white;
 }
 
-.middle-page {
-  min-height: 60vh;
-  background: white;
-  padding-top: 70px;
-}
-
 #content .section-title {
   padding-top: 10px;
   margin-bottom: 60px;
@@ -351,6 +345,12 @@ header .show-more a:hover {
 }
 
 /* ABOUT */
+#about {
+  min-height: 80vh;
+  background: white;
+  padding-top: 70px;
+}
+
 img.profile {
   border-radius: 20px;
   display: inline-block;

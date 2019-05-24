@@ -49,7 +49,7 @@ $('#send-contact-form').on('click', function(event) {
 
     if(!$name.val()) {
         event.preventDefault();
-        $emptyFormAlert.text('Sin nombre no sé a quién le respondo.');
+        $emptyFormAlert.text('Sin nombre no sé a quién le respondo! :)');
     } else if(!$email.val()) {
         event.preventDefault();
         $emptyFormAlert.text('¡El email es muy importante!');
