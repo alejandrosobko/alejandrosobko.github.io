@@ -21,6 +21,9 @@ const showNavbar = function() {
 
 
 $(document).ready(function() {
+    $('#spinner-loading').addClass('hidden');
+    $('#site-content').removeClass('hidden');
+
     AOS.init();
 
     $(window).scroll(function() {
@@ -75,14 +78,14 @@ $('#experience #projects-backend').on('click', function(e) {
     $('#experience .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
-    $('#experience .project').removeClass('hidden');
-    $('#experience #construcciones').addClass('hidden');
-    $('#experience #modernizacion').addClass('hidden');
+    $('#experience .project').addClass('hidden');
+    $('#experience #unpie').removeClass('hidden');
 })
 $('#experience #projects-frontend').on('click', function(e) {
     $('#experience .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
-    $('#experience .project').removeClass('hidden');
-    $('#experience #unpie').addClass('hidden');
+    $('#experience .project').addClass('hidden');
+    $('#experience #construcciones').removeClass('hidden');
+    $('#experience #modernizacion').removeClass('hidden');
 })
