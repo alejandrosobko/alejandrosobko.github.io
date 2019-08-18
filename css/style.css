@@ -421,6 +421,10 @@ div #profile-about{
   color: white;
 }
 
+#experience .project {
+  transition: all 2s;
+}
+
 .exp-box {
   position: relative;
   display: block;
@@ -431,6 +435,7 @@ div #profile-about{
 
 .exp-box img {
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .exp-box-caption {
@@ -480,6 +485,23 @@ div #profile-about{
   color: #ff93ca;
 }
 
+.projects-picker span.active {
+  color: #fd5f5f;
+}
+
+.projects-picker span#projects-backend, .projects-picker span#projects-frontend {
+  margin-left: 20px;
+}
+
+
+.projects-picker span:hover {
+  color: #fd5f5f;
+}
+
+.projects-picker span {
+  cursor: pointer;
+  margin-right: 20px;
+}
 
 /* FIN EXPERIENCE */
 

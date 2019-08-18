@@ -64,3 +64,25 @@ $('#send-contact-form').on('click', function(event) {
 function possibleMobile() {
     return window.innerWidth <= 800;
 }
+
+$('#experience #projects-all').on('click', function(e) {
+    $('#experience .projects-picker span').removeClass('active');
+    $(e.currentTarget).addClass('active');
+
+    $('#experience .project').removeClass('hidden');
+})
+$('#experience #projects-backend').on('click', function(e) {
+    $('#experience .projects-picker span').removeClass('active');
+    $(e.currentTarget).addClass('active');
+
+    $('#experience .project').removeClass('hidden');
+    $('#experience #construcciones').addClass('hidden');
+    $('#experience #modernizacion').addClass('hidden');
+})
+$('#experience #projects-frontend').on('click', function(e) {
+    $('#experience .projects-picker span').removeClass('active');
+    $(e.currentTarget).addClass('active');
+
+    $('#experience .project').removeClass('hidden');
+    $('#experience #unpie').addClass('hidden');
+})
