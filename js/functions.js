@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('#spinner-loading').addClass('hidden');
     $('#site-content').removeClass('hidden');
 
-    AOS.init();
+//    AOS.init();
 
     $(window).scroll(function() {
         showNavbar();
