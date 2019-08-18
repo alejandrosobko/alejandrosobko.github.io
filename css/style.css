@@ -111,22 +111,22 @@ header .show-more a:hover {
     margin: auto;
     width: 100%;
     z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px;
   }
 
   nav {
-    background: #00103ceb;
-    border-bottom: 3px solid #1cd4da;
-    height: 60px;
+    background: #fffffff7;
+    height: 80px;
   }
 
   nav .logo {
-    padding: 10px;
+    padding: 19px;
   }
 
   nav ul {
     list-style: none;
     float: right;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   nav ul li {
@@ -134,27 +134,21 @@ header .show-more a:hover {
   }
 
   nav ul .section {
-    padding: 12px 15px 2px 15px;
-  }
-
-  nav ul .section:hover {
-    border-bottom: 2px solid #1ab9e4;
-    transition: all 500ms ease;
-    cursor: pointer;
+    padding: 12px 15px 12px 15px;
   }
 
   nav ul li a {
     font-size: 20px;
-    color: #fff;
+    color: #000;
   }
 
   nav ul li a:hover {
-    color: #fff;
     text-decoration: none;
+    color: #fd5f5f;
   }
 
   nav ul li a:focus {
-    color: #fff;
+    color: #fd5f5f;
     text-decoration: none;
   }
 
@@ -273,6 +267,10 @@ header .show-more a:hover {
     display: block;
     color: #000;
     text-decoration: none;
+  }
+
+  label.hamburguer-menu a:hover {
+    color: #fd5f5f;
   }
 }
 
