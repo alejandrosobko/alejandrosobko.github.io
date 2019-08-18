@@ -108,6 +108,7 @@ header #header-img {
   z-index: 2;
   position: fixed;
   filter: blur(0.5px) brightness(45%);
+  background-image: url('../images/header-wallpaper.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -584,6 +585,7 @@ div #profile-about{
 }
 
 #services {
+  background-image: url('../images/services/services.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -675,6 +677,7 @@ div #profile-about{
 #contact {
   color: white;
   padding-bottom: 50px;
+  background-image: url('../images/contact/contact-wallpaper.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
