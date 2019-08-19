@@ -74,12 +74,13 @@ $('#experience #projects-all').on('click', function(e) {
 
     $('#experience .project').removeClass('hidden');
 })
-$('#experience #projects-backend').on('click', function(e) {
+$('#experience #projects-fullstack').on('click', function(e) {
     $('#experience .projects-picker span').removeClass('active');
     $(e.currentTarget).addClass('active');
 
     $('#experience .project').addClass('hidden');
     $('#experience #unpie').removeClass('hidden');
+    $('#experience #protagonistas').removeClass('hidden');
 })
 $('#experience #projects-frontend').on('click', function(e) {
     $('#experience .projects-picker span').removeClass('active');
