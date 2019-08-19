@@ -168,7 +168,7 @@ header .show-more a {
 
 header .show-more a:hover {
   color: white;
-  border-color: #59d1ff;
+  border-color: #fd5f5f;
   text-decoration: none;
 }
 
@@ -472,8 +472,8 @@ div #profile-about{
 }
 
 #habilities img {
-  max-width: 120px;
-  height: 110px;
+  max-width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 700px) {
@@ -539,11 +539,11 @@ div #profile-about{
   width: 100%;
   position: absolute;
   top: 80%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .exp-inside.exp-show-more a {
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 10px;
 }
 
