@@ -244,10 +244,9 @@ header .show-more a:hover {
     right: -100px;
     top: -100px;
     z-index: 100;
-    width: 180px;
-    height: 180px;
-    background: #cecece;
-    border-radius: 50% 50% 50% 50%;
+    width: 170px;
+    height: 170px;
+    background: #252934;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
@@ -256,17 +255,17 @@ header .show-more a:hover {
   }
   label.hamburguer-menu .menu .hamburger {
     top: 135px;
-    left: 35px;
+    left: 23px;
   }
   label.hamburguer-menu input:checked + .menu .hamburger {
-    top: 140px;
-    left: 30px;
+    top: 135px;
+    left: 23px;
   }
   label.hamburguer-menu .hamburger {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #000;
+    background: #fff;
     display: block;
     -webkit-transform-origin: center;
             transform-origin: center;
@@ -281,7 +280,7 @@ header .show-more a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #fff;
   }
   label.hamburguer-menu .hamburger:before {
     top: -10px;
@@ -677,11 +676,7 @@ div #profile-about{
 #contact {
   color: white;
   padding-bottom: 50px;
-  background-image: url('../images/contact/contact-wallpaper.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #252934;
 }
 
 #contact form {
@@ -724,10 +719,26 @@ div #profile-about{
   }
 }
 
+#contact input, #contact textarea {
+  color: white;
+  background: #1E242C;
+  border: 1px solid #27283c;
+  border-radius: 0;
+}
+
+button#send-contact-form {
+  background: #3a882c;
+  border-color: transparent;
+}
+
+button#send-contact-form:hover {
+  background: #2c6921;
+}
+
 /* FIN CONTACT */
 
 footer {
-  background: #16173f;
+  background: #1B242F;
   color: #fff;
   height: 75px;
   padding: 25px;
