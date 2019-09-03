@@ -241,25 +241,24 @@ header .show-more a:hover {
 
   label.hamburguer-menu .menu {
     position: fixed;
-    right: -100px;
-    top: -100px;
+    right: 20px;
+    top: 20px;
     z-index: 100;
-    width: 170px;
-    height: 170px;
-    background: #252934;
+    width: 60px;
+    height: 60px;
+    background: #fd5f5f;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
             box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
   }
   label.hamburguer-menu .menu .hamburger {
-    top: 135px;
-    left: 23px;
-  }
-  label.hamburguer-menu input:checked + .menu .hamburger {
-    top: 135px;
-    left: 23px;
+    top: 30px;
+    left: 15px;
   }
   label.hamburguer-menu .hamburger {
     position: absolute;
