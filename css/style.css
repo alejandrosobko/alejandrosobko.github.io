@@ -576,57 +576,6 @@ div #profile-about{
 
 /* FIN EXPERIENCE */
 
-/* SERVICES */
-
-@media screen and (min-width: 1000px) {
-  #services {
-    height: 70vh;
-  }
-}
-
-#services {
-  background-image: url('../images/services/services.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 30px 0 90px 0;
-}
-
-#services .custom-hr {
-  background-color: white;
-}
-
-#services #services-wrapper {
-  color: white;
-}
-
-#services .service-info {
-  margin-bottom: 40px;
-}
-
-#services svg {
-  width: 70px;
-  fill: white;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-#services svg.light:hover {
-  fill: rgb(255, 241, 49);
-}
-
-#services svg.frontend:hover {
-  fill: rgb(49, 255, 193);
-}
-
-#services svg.backend:hover {
-  fill: rgb(255, 97, 49);
-}
-
-/* FIN SERVICES */
-
 /* BLOG */
 
 @media screen and (max-width: 765px) {
