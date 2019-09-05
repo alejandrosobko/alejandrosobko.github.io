@@ -440,51 +440,6 @@ div #profile-about{
 /* FIN ABOUT */
 
 
-/* SKILLS */
-
-#skills {
-  background: #f3f3f3;
-}
-
-.star {
-  color: rgb(221, 218, 30);
-  font-size: 20px;
-}
-
-#reference div span.star {
-  display: inline-block;
-  width: 100px;
-}
-
-#habilities {
-  margin-top: 40px;
-}
-
-#habilities div {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-#habilities img:hover {
-  filter: brightness(120%);
-}
-
-#habilities img {
-  max-width: 100px;
-  height: 100px;
-}
-
-@media screen and (max-width: 700px) {
-  #habilities img {
-    height: 90px;
-  }
-}
-
-#habilities span {
-  margin-top: 10px;
-}
-/* FIN SKILLS */
-
 /* EXPERIENCE */
 #experience a {
   color: white;
@@ -587,7 +542,7 @@ div #profile-about{
 
 @media screen and (min-width: 1000px) {
   #services {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
@@ -606,11 +561,13 @@ div #profile-about{
 
 #services #services-wrapper {
   color: white;
+  margin-top: 50px;
 }
 
 #services .service-info {
   margin-bottom: 40px;
 }
+
 
 #services svg {
   width: 70px;
