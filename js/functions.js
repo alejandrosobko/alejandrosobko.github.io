@@ -1,4 +1,6 @@
 $(document).on('click', 'a[href^="#"]', function (event) {
+    if (event.currentTarget.className.includes("carousel-control")) { return }
+
     event.preventDefault();
 
     const offsetToScroll = possibleMobile() ? 0 : 20;

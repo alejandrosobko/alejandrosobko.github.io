@@ -119,7 +119,7 @@
                     </div>
 
                     <div class="exp-inside exp-show-more">
-                      <a href="">Ver detalles</a>
+                      <button data-toggle="modal" data-target="#modal-unpie">Ver detalles</button>
                     </div>
                   </div>
                 </div>
@@ -135,9 +135,9 @@
                     </div>
 
                     <div class="exp-inside exp-show-more">
-                      <a href="">Ver detalles</a>
+                      <button data-toggle="modal" data-target="#modal-construcciones">Ver detalles</button>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
 
@@ -151,9 +151,9 @@
                     </div>
 
                     <div class="exp-inside exp-show-more">
-                      <a href="">Ver detalles</a>
+                      <button data-toggle="modal" data-target="#modal-explorer">Ver detalles</button>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
 
@@ -167,9 +167,9 @@
                     </div>
 
                     <div class="exp-inside exp-show-more">
-                      <a href="">Ver detalles</a>
+                      <button data-toggle="modal" data-target="#modal-pro">Ver detalles</button>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,8 +274,193 @@
     </div>
   </span>
 
+  <div id="modal-unpie" class="modal modal-message fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Un pie y otro pie</h4>
+          <button type="button" class="btn btn-default" id="btnclose" data-dismiss="modal">&#10006;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-carousel">
+            <div id="carousel-unpie" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-unpie" data-slide-to="0" class="active"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/experience/unpieyotropie.webp" alt="unpie example">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-unpie" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only"><</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-unpie" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">></span>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            Aplicación web para el control y administración de stock, precios, proveedores y gastos generales de una zapatería.
+            El proyecto consta de 2 aplicaciones separadas que se comunican via API REST.
+            Backend: Ruby on Rails
+            Frontend: EmberJS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-construcciones" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Construcciones Rodriguez</h4>
+          <button type="button" class="btn btn-default" id="btnclose" data-dismiss="modal">&#10006;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-carousel">
+            <div id="carousel-construcciones" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-construcciones" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-construcciones" data-slide-to="1"></li>
+                <li data-target="#carousel-construcciones" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/experience/construcciones.webp" alt="construcciones example">
+                </div>
+                <div class="item">
+                  <img src="images/experience/construcciones_web.webp" alt="construcciones example">
+                </div>
+                <div class="item">
+                  <img src="images/experience/construcciones_mobile.webp" alt="construcciones example">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-construcciones" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only"><</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-construcciones" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">></span>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            Página web para la promoción del cliente.
+            Es un proyecto full responsive de diseño propio.
+            HTML, CSS, JS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-explorer" class="modal modal-message fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Explorador de Series de Tiempo</h4>
+          <button type="button" class="btn btn-default" id="btnclose" data-dismiss="modal">&#10006;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-carousel">
+            <div id="carousel-explorer" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-explorer" data-slide-to="0" class="active"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/experience/modernizacion.webp" alt="modernizacion example">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-explorer" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only"><</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-explorer" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">></span>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            Aplicación frontend para mostrar las series de tiempo que recibe de una API.
+            Frontend: ReactJS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal-pro" class="modal modal-message fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Protagonistas del Cambio</h4>
+          <button type="button" class="btn btn-default" id="btnclose" data-dismiss="modal">&#10006;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-carousel">
+            <div id="carousel-pro" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-pro" data-slide-to="0" class="active"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/experience/protagonistas.webp" alt="pro example">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-pro" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only"><</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-pro" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">></span>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            Aplicación de comunicación para un partido electoral.
+            API: Java
+            Admin Frontend: Angular2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <script src="js/typer.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="js/functions.js"></script>

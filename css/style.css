@@ -441,7 +441,7 @@ div #profile-about{
 
 
 /* EXPERIENCE */
-#experience a {
+#experience button {
   color: white;
 }
 
@@ -497,9 +497,10 @@ div #profile-about{
   font-size: 15px;
 }
 
-.exp-inside.exp-show-more a {
+.exp-inside.exp-show-more button {
   border: 1px solid white;
   padding: 10px;
+  background: transparent;
 }
 
 .project-name.text-faded {
@@ -726,4 +727,29 @@ footer {
 @keyframes fadeInOpacity {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.modal {
+  top: 10%;
+}
+
+.modal-title {
+  display: inline-block;
+}
+
+.modal #btnclose {
+  float: right;
+  border: none;
+  color: #ff6464;
+}
+
+.modal .item img {
+  height: 580px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .modal .item img {
+    height: 350px;
+  }
 }
