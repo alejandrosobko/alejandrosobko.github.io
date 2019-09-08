@@ -747,7 +747,7 @@ footer {
 }
 
 .modal .item img {
-  height: 580px;
+  height: 500px;
   margin: 0 auto;
 }
 
@@ -755,4 +755,13 @@ footer {
   .modal .item img {
     height: 350px;
   }
+}
+
+.info-tech {
+  color: #ff6464;
+}
+
+.modal-visit {
+  margin-left: 10px;
+  font-size: 15px;
 }
