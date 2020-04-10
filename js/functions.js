@@ -16,8 +16,10 @@ const showNavbar = function() {
     const headerHeight = $('header').height() - 70;
     if($(window).scrollTop() > headerHeight) {
         $('nav').parent().removeClass('hidden-content');
+        $('label.hamburguer-menu').removeClass('hidden-content');
     } else if($(window).scrollTop() < headerHeight) {
         $('nav').parent().addClass('hidden-content');
+        $('label.hamburguer-menu').Class('hidden-content');
     }
 };
 
