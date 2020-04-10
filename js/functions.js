@@ -19,7 +19,7 @@ const showNavbar = function() {
         $('label.hamburguer-menu').removeClass('hidden-content');
     } else if($(window).scrollTop() < headerHeight) {
         $('nav').parent().addClass('hidden-content');
-        $('label.hamburguer-menu').Class('hidden-content');
+        $('label.hamburguer-menu').addClass('hidden-content');
     }
 };
 
