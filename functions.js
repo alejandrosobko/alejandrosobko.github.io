@@ -29,6 +29,7 @@ document.getElementById("showBlog").addEventListener("click", function(e) {
 document.getElementById("wizard").addEventListener("click", function() {
   if (document.body.classList.contains("theme-dark")) { return; }
 
+  gtag('event', 'click-wizard');
   document.body.classList.add("theme-dark");
   const container = document.querySelector(".sparticles-container");
   new Sparticles(container, { count: 100, shape: "star" });
