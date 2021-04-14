@@ -78,7 +78,7 @@ body.theme-dark button {
     margin-top: 30px;
 }
 
-#social-networks a {
+.content a {
     color: #2e70d6;
 }
 
@@ -88,6 +88,9 @@ body.theme-dark button {
 
 .image-container img {
     width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    animation: fadeIn 1s;
 }
 
 .buttons {
@@ -112,6 +115,7 @@ body.theme-dark button {
 .information p {
     line-height: 30px;
     font-size: 18px;
+    animation: fadeIn .3s;
 }
 
 .heart-emoji {
@@ -182,12 +186,22 @@ strong {
     font-size: 16px;
 }
 
+body.theme-dark .highlighted {
+    background-color: yellow;
+    color: black;
+}
+
 #blog .box img {
     border-bottom: 1px solid #9898ff3b;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 290px;
     height: 250px;
+}
+
+#wizard {
+    cursor: pointer;
+    user-select: none;
 }
 
 .sparticles-container {
@@ -225,7 +239,6 @@ strong {
 
 @keyframes fadeIn {
     0% { opacity: 0; }
-    60% { opacity: 0.5; }
     100% { opacity: 1; }
 }
 /* end effects */

@@ -5,29 +5,38 @@ document.getElementById("showShort").addEventListener("click", function(e) {
   showSelection("short", "showShort");
 })
 
-document.getElementById("showLong").addEventListener("click", function(e) {
+document.getElementById("showLong").addEventListener("click", function() {
   hideSection("short", "showShort");
   hideSection("contact", "showContact");
   hideSection("blog", "showBlog");
   showSelection("long", "showLong");
 })
 
-document.getElementById("showContact").addEventListener("click", function(e) {
+document.getElementById("showContact").addEventListener("click", function() {
   hideSection("long", "showLong");
   hideSection("short", "showShort");
   hideSection("blog", "showBlog");
   showSelection("contact", "showContact");
 })
 
-document.getElementById("showBlog").addEventListener("click", function(e) {
+document.getElementById("showBlog").addEventListener("click", function() {
   hideSection("contact", "showContact");
   hideSection("short", "showShort");
   hideSection("long", "showLong");
   showSelection("blog", "showBlog");
 })
 
+let clickCount = 0;
 document.getElementById("wizard").addEventListener("click", function() {
   if (document.body.classList.contains("theme-dark")) { return; }
+
+  clickCount = clickCount + 1;
+
+  setTimeout(() => {
+    clickCount = 0;
+  }, 200);
+
+  if (clickCount !== 2) { return; }
 
   gtag('event', 'click-wizard');
   document.body.classList.add("theme-dark");
