@@ -82,6 +82,10 @@ body.theme-dark button {
     color: #2e70d6;
 }
 
+body.theme-dark .content a {
+    color: #84b1f6;
+}
+
 .content a:hover {
     color: #2ba811 !important;
 }
