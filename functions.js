@@ -1,25 +1,25 @@
-document.getElementById("showShort").addEventListener("click", function(e) {
+document.getElementById("showShort").addEventListener("click", () => {
   hideSection("long", "showLong");
   hideSection("contact", "showContact");
   hideSection("blog", "showBlog");
   showSelection("short", "showShort");
 })
 
-document.getElementById("showLong").addEventListener("click", function() {
+document.getElementById("showLong").addEventListener("click", () => {
   hideSection("short", "showShort");
   hideSection("contact", "showContact");
   hideSection("blog", "showBlog");
   showSelection("long", "showLong");
 })
 
-document.getElementById("showContact").addEventListener("click", function() {
+document.getElementById("showContact").addEventListener("click", () => {
   hideSection("long", "showLong");
   hideSection("short", "showShort");
   hideSection("blog", "showBlog");
   showSelection("contact", "showContact");
 })
 
-document.getElementById("showBlog").addEventListener("click", function() {
+document.getElementById("showBlog").addEventListener("click", () => {
   hideSection("contact", "showContact");
   hideSection("short", "showShort");
   hideSection("long", "showLong");
@@ -27,14 +27,11 @@ document.getElementById("showBlog").addEventListener("click", function() {
 })
 
 let clickCount = 0;
-document.getElementById("wizard").addEventListener("click", function() {
+document.getElementById("wizard").addEventListener("click", () => {
   if (document.body.classList.contains("theme-dark")) { return; }
 
   clickCount = clickCount + 1;
-
-  setTimeout(() => {
-    clickCount = 0;
-  }, 200);
+  setTimeout(() => { clickCount = 0; }, 200);
 
   if (clickCount !== 2) { return; }
 
@@ -43,6 +40,8 @@ document.getElementById("wizard").addEventListener("click", function() {
   const container = document.querySelector(".sparticles-container");
   new Sparticles(container, { count: 100, shape: "star" });
 })
+
+///////////
 
 function showSelection(textID, buttonID) {
   document.getElementById(textID).classList.remove("hidden");
