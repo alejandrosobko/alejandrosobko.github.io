@@ -152,6 +152,10 @@ strong {
     visibility: hidden !important;
 }
 
+.red {
+    color: red;
+}
+
 .wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
