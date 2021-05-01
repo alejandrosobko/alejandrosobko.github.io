@@ -79,15 +79,20 @@ body.theme-dark button {
 }
 
 .content a {
-    color: #2e70d6;
+    background-color: rgba(187,239,253,0.3);
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 body.theme-dark .content a {
-    color: #84b1f6;
+    background: none;
+    color: #bbeffd;
+    text-decoration: underline;
 }
 
 .content a:hover {
-    color: #2ba811 !important;
+    background-color: #bbeffd;
 }
 
 .image-container img {
