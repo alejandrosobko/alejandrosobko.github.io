@@ -78,6 +78,10 @@ body.theme-dark button {
     margin-top: 30px;
 }
 
+.main-language {
+    color: rgb(245, 84, 111);
+}
+
 .content a {
     background-color: rgba(187,239,253,0.3);
     color: #1a1a1a;
