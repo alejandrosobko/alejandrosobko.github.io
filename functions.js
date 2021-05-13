@@ -31,11 +31,13 @@ document.getElementById("wizard").addEventListener("click", () => {
   if (document.body.classList.contains("theme-dark")) { return; }
 
   clickCount = clickCount + 1;
-  setTimeout(() => { clickCount = 0; }, 200);
+  setTimeout(() => { clickCount = 0; }, 400);
 
   if (clickCount !== 2) { return; }
 
-  gtag('event', 'click-wizard');
+  if (window.location.hostname) {
+    gtag('event', 'click-wizard');
+  }
   document.body.classList.add("theme-dark");
   const container = document.querySelector(".sparticles-container");
   new Sparticles(container, { count: 100, shape: "star" });
