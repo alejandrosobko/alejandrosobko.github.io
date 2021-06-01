@@ -232,6 +232,16 @@ body.theme-dark .highlighted {
      */
     z-index: -1;
 }
+
+.found {
+    display: none;
+}
+
+body.theme-dark .found {
+    display: inline-block;
+}
+
+
 /**
 * we could a;so use "pointer-events: none;" in
 * modern browsers to put the particles on top of all our content
