@@ -1,8 +1,8 @@
 html,
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -23,7 +23,7 @@ body.theme-dark {
 *,
 *:focus,
 *:hover {
-    outline:none;
+    outline: none;
 }
 
 #dumbledore-quote {
@@ -44,7 +44,8 @@ body.theme-dark button {
 
 .content {
     padding: 20px;
-    margin: 20px auto 27px; /* 27px -> footer height */
+    margin: 20px auto 27px;
+    /* 27px -> footer height */
     max-width: 940px;
 }
 
@@ -83,10 +84,10 @@ body.theme-dark button {
 }
 
 .content a {
-    background-color: rgba(187,239,253,0.3);
+    background-color: rgba(187, 239, 253, 0.3);
     color: #1a1a1a;
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 body.theme-dark .content a {
@@ -111,19 +112,24 @@ body.theme-dark .content a {
     justify-content: space-around;
     max-width: 390px;
     margin: 50px auto 20px;
+    gap: 10px;
 }
 
 .buttons button {
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #e7e7e7;
+    border-radius: 9px;
+    border: 1px solid #e1dede;
     padding: 5px 10px;
-    color: #fb1e7b;
-    background: white;
+    width: 100px;
+    height: 40px;
+    background-color: #97979714;
+    font-size: 16px;
 }
 
 .buttons button:hover {
-    color: #fd5f5f;
+    color: #5f7ffd;
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 .information p {
@@ -224,8 +230,10 @@ body.theme-dark .highlighted {
 
 .sparticles-container {
     position: fixed;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     /**
      * z-index: -1; this makes the <body> still interactive
      * by placing the sparticles behind the content
@@ -246,7 +254,7 @@ body.theme-dark .found {
 * we could a;so use "pointer-events: none;" in
 * modern browsers to put the particles on top of all our content
 */
-@supports ( pointer-events: none ) {
+@supports (pointer-events: none) {
     .sparticles-container {
         z-index: 2;
         pointer-events: none;
@@ -255,20 +263,50 @@ body.theme-dark .found {
 
 /* Effects */
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-    10% { transform: rotate(14.0deg) }
-    20% { transform: rotate(-8.0deg) }
-    30% { transform: rotate(14.0deg) }
-    40% { transform: rotate(-4.0deg) }
-    50% { transform: rotate(10.0deg) }
-    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 /* end effects */
 
 /* Mobile */
@@ -296,4 +334,5 @@ body.theme-dark .found {
         order: 0;
     }
 }
+
 /* End mobile */
