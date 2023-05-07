@@ -150,6 +150,9 @@ body.theme-dark .content a {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: #4e29ff;
     padding: 2px;
@@ -158,7 +161,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 27px;
+    height: 40px;
 }
 
 footer p {
