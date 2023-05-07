@@ -118,18 +118,23 @@ body.theme-dark .content a {
 .buttons button {
     cursor: pointer;
     border-radius: 9px;
-    border: 1px solid #e1dede;
+    border: none;
     padding: 5px 10px;
     width: 100px;
     height: 40px;
     background-color: #97979714;
     font-size: 16px;
+    color: #4a4a4a;
+}
+
+.buttons button.active {
+    transform: scale(1.1);
+    background: #00000014;
 }
 
 .buttons button:hover {
-    color: #5f7ffd;
-    transform: scale(1.1);
     transition: all 0.3s;
+    background: #00000014;
 }
 
 .information p {

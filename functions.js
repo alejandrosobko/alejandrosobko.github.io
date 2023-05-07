@@ -47,10 +47,10 @@ document.getElementById("wizard").addEventListener("click", () => {
 
 function showSelection(textID, buttonID) {
   document.getElementById(textID).classList.remove("hidden");
-  document.querySelector(`#${buttonID} span`).classList.remove('hidden');
+  document.querySelector(`#${buttonID}`).classList.add('active');
 }
 
 function hideSection(textID, buttonID) {
   document.getElementById(textID).classList.add("hidden");
-  document.querySelector(`#${buttonID} span`).classList.add('hidden');
+  document.querySelector(`#${buttonID}`).classList.remove('active');
 }
