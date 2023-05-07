@@ -103,7 +103,8 @@ body.theme-dark .content a {
 .image-container img {
     width: 320px;
     height: 320px;
-    border-radius: 50%;
+    clip-path: circle();
+    object-fit: cover;
     animation: fadeIn 1s;
 }
 
@@ -307,8 +308,9 @@ body.theme-dark .found {
         opacity: 0;
     }
 
-    100% {
+    90% {
         opacity: 1;
+
     }
 }
 

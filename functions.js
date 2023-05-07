@@ -43,6 +43,25 @@ document.getElementById("wizard").addEventListener("click", () => {
   new Sparticles(container, { count: 100, shape: "star" });
 })
 
+function randomImages() {
+  document.querySelector('.image-container img').classList.remove('hidden')
+
+  let timeoutHandle = undefined;
+  const imageList = Array.from(document.querySelectorAll('.image-container img')).sort(() => Math.random() - 0.5);
+  let counter = 0;
+
+  const showImage = (index) => {
+    document.querySelector('.image-container img:not(.hidden)').classList.add('hidden')
+    imageList[index].classList.remove('hidden')
+  }
+
+  timeoutHandle = setInterval(() => {
+    showImage(++counter % imageList.length)
+  }, 5000);
+}
+randomImages()
+
+
 ///////////
 
 function showSelection(textID, buttonID) {
