@@ -39,7 +39,12 @@ body.theme-dark #dumbledore-quote {
 }
 
 body.theme-dark button {
-    background-color: black;
+    color: rgb(177, 173, 173);
+}
+
+body.theme-dark button.active {
+    background-color: #484848;
+    color: white;
 }
 
 .content {
