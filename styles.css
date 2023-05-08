@@ -348,6 +348,10 @@ body.theme-dark .found {
         text-align: center;
         order: 0;
     }
+
+    footer {
+        padding-bottom: 15px;
+    }
 }
 
 /* End mobile */
