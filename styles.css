@@ -143,6 +143,10 @@ body.theme-dark .content a {
     background: #00000014;
 }
 
+.information {
+    margin: 40px 0;
+}
+
 .information p {
     line-height: 30px;
     font-size: 18px;
