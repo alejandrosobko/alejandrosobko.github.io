@@ -149,7 +149,7 @@ body.theme-dark .content a {
 
 .information p {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     animation: fadeIn .3s;
 }
 
@@ -221,11 +221,6 @@ strong {
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 17px;
-}
-
-.information p {
-    line-height: 25px;
-    font-size: 16px;
 }
 
 body.theme-dark .highlighted {
