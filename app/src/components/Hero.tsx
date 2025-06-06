@@ -60,7 +60,7 @@ const Hero = () => {
         position="relative"
       >
         <Image
-          src={'profile.webp'}
+          src={'https://alejandrosobko.github.io/profile.webp'}
           alt="Profile Image"
           priority
           fill
