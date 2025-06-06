@@ -60,8 +60,9 @@ const Hero = () => {
         position="relative"
       >
         <Image
-          src={'/profile.webp'}
+          src={'profile.webp'}
           alt="Profile Image"
+          priority
           fill
           style={{ objectFit: "cover" }}
         />
