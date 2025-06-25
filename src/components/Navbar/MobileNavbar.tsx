@@ -9,13 +9,13 @@ import {
   Flex,
   IconButton,
   Stack,
-  useDisclosure,
 } from "@chakra-ui/react"
 import { ListIcon } from "@phosphor-icons/react"
 import Link from "next/link"
+import { useState } from "react"
 
 const MobileNavbar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <Flex display={{ base: "flex", md: "none" }}>
@@ -23,10 +23,14 @@ const MobileNavbar = () => {
         aria-label="Open menu"
         icon={<ListIcon />}
         colorScheme="gray"
-        onClick={onOpen}
+        onClick={() => setIsOpen(!isOpen)}
       />
 
-      <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
+      <Drawer
+        placement="right"
+        onClose={() => setIsOpen(false)}
+        isOpen={isOpen}
+      >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader>
@@ -37,33 +41,36 @@ const MobileNavbar = () => {
               <Link
                 href={"#about"}
                 style={{ fontWeight: "bold" }}
-                onClick={onClose}
+                onClick={() => setIsOpen(false)}
+                passHref
               >
-                Sobre mi
+                About
               </Link>
               <Link
                 href={"#services"}
                 style={{ fontWeight: "bold" }}
-                onClick={onClose}
+                onClick={() => setIsOpen(false)}
+                passHref
               >
-                Servicios
+                Services
               </Link>
               <Link
                 href={"#projects"}
                 style={{ fontWeight: "bold" }}
-                onClick={onClose}
+                onClick={() => setIsOpen(false)}
+                passHref
               >
-                Proyectos
+                Projects
               </Link>
               <Link
                 href={"mailto:alejandro.sobko@gmail.com"}
                 style={{ fontWeight: "bold" }}
                 onClick={() => {
-                  onClose()
+                  setIsOpen(false)
                   event("click", { location: "mobile-contact" })
                 }}
               >
-                Contacto
+                Contact
               </Link>
             </Stack>
           </DrawerBody>

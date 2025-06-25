@@ -6,13 +6,13 @@ const DesktopNavbar = () => {
   return (
     <Flex gap={6} display={{ base: "none", md: "flex" }}>
       <Link href={"#about"} style={{ fontWeight: "bold" }}>
-        Sobre mi
+        About
       </Link>
       <Link href={"#services"} style={{ fontWeight: "bold" }}>
-        Servicios
+        Services
       </Link>
       <Link href={"#projects"} style={{ fontWeight: "bold" }}>
-        Proyectos
+        Projects
       </Link>
       <Link
         href={"mailto:alejandro.sobko@gmail.com"}
@@ -21,7 +21,7 @@ const DesktopNavbar = () => {
           event("click", { location: "desktop-contact" })
         }}
       >
-        Contacto
+        Contact
       </Link>
     </Flex>
   )

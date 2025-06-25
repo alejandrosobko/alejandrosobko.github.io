@@ -19,7 +19,7 @@ const Footer = () => {
         <Link href="https://alejandrosobko.com" target="_blank">
           <IconButton
             aria-label="Github"
-            icon={<GithubLogoIcon size={16} />}
+            icon={<GithubLogoIcon size={22} />}
             variant="ghost"
             colorScheme="gray"
             size="sm"
@@ -31,7 +31,7 @@ const Footer = () => {
         >
           <IconButton
             aria-label="Linkedin"
-            icon={<LinkedinLogoIcon size={16} />}
+            icon={<LinkedinLogoIcon size={22} />}
             variant="ghost"
             colorScheme="gray"
             size="sm"

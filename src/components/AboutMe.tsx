@@ -11,7 +11,6 @@ const AboutMe = () => {
     "PostgreSQL",
     "MongoDB",
     "Docker",
-    "Git",
     "REST APIs",
     "GraphQL",
   ]
@@ -25,29 +24,31 @@ const AboutMe = () => {
       gap={4}
       py={12}
       px={8}
+      scrollMarginTop="40px"
     >
       <Stack spacing={4} maxW={"4xl"} margin={"auto"}>
         <Heading variant={"primary"}>About Me</Heading>
         <Text fontSize="lg" color="gray.800">
-          Hey! I&apos;m Alejandro Sobko, a software developer based in
-          Argentina. I work remotely at{" "}
+          Hey! 👋🏻 I&apos;m Alejandro Sobko, a software developer based in
+          Argentina.
+        </Text>
+        <Text fontSize="lg" color="gray.800">
+          Over the years, I&apos;ve worked on a variety of projects in different
+          roles — both as part of a team and as a freelancer. My last
+          contribution was to{" "}
           <Link
             href="https://www.altitude-sports.com/"
             target="_blank"
             style={{ color: "blue", textDecoration: "underline" }}
           >
             Altitude-Sports
-          </Link>
-          , mainly focused on frontend development with{" "}
+          </Link>{" "}
+          with{" "}
           <Text as="span" variant="highlight">
-            Next.js.
+            Next.js
           </Text>
-        </Text>
-        <Text fontSize="lg" color="gray.800">
-          Over the years, I&apos;ve worked on a variety of projects in different
-          roles—both as part of a team and as a freelancer. I also had the
-          chance to teach ReactJS at EducaciónIT, which I really enjoyed because
-          I love sharing what I learn.
+          . I also had the chance to teach ReactJS at EducaciónIT, which I
+          really enjoyed because I love sharing what I learn.
         </Text>
         <Text fontSize="lg" color="gray.800">
           Even though I&apos;m currently more focused on frontend, I also have
