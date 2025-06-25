@@ -10,7 +10,7 @@ import { Box } from "@chakra-ui/react"
 
 const Index = () => {
   return (
-    <Box>
+    <Box scrollBehavior={"smooth"}>
       <Navbar />
       <Hero />
       <AboutMe />

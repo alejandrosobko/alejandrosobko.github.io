@@ -24,6 +24,7 @@ const AboutMe = () => {
       gap={4}
       py={12}
       px={8}
+      scrollMarginTop="40px"
     >
       <Stack spacing={4} maxW={"4xl"} margin={"auto"}>
         <Heading variant={"primary"}>About Me</Heading>

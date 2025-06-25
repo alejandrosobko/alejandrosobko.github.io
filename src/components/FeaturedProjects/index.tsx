@@ -14,6 +14,7 @@ const FeaturedProjects = () => {
       py={12}
       px={8}
       pt={"50px"}
+      scrollMarginTop="40px"
     >
       <Heading variant={"primary"}>Featured Projects</Heading>
 

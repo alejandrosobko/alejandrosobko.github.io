@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout"
+import "@/global.css"
 import { CustomChakraProvider } from "@/providers/chakra"
 import moment from "moment"
 import "moment/locale/es"
