@@ -39,21 +39,21 @@ const MobileNavbar = () => {
                 style={{ fontWeight: "bold" }}
                 onClick={onClose}
               >
-                Sobre mi
+                About
               </Link>
               <Link
                 href={"#services"}
                 style={{ fontWeight: "bold" }}
                 onClick={onClose}
               >
-                Servicios
+                Services
               </Link>
               <Link
                 href={"#projects"}
                 style={{ fontWeight: "bold" }}
                 onClick={onClose}
               >
-                Proyectos
+                Projects
               </Link>
               <Link
                 href={"mailto:alejandro.sobko@gmail.com"}
@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                   event("click", { location: "mobile-contact" })
                 }}
               >
-                Contacto
+                Contact
               </Link>
             </Stack>
           </DrawerBody>
